@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "method": "Integer cents, daily aggregation, net-position financing; no reference imports",
+  "weeks_compared": 13,
+  "exclusions_compared": 7,
+  "duplicate_rows_removed": 5,
+  "human_domain_review": "project_owner_confirmed",
+  "external_independent_review": false,
+  "sha256": {
+    "cases/cash_forecast_001/inputs/credit_facility.json": "44768bea8174ee70b84ed4e3b913503f26105ce716b692da55dfac793f4c4549",
+    "cases/cash_forecast_001/inputs/opening_balances.csv": "0777cfb12a2ca33026228554082bd55cacbf66cd5c46df37a920bb6ca9ded131",
+    "cases/cash_forecast_001/inputs/payables.csv": "702929cccba24138ccde15ef261d5d63aef2ebba858d4e15a170b13ebda54825",
+    "cases/cash_forecast_001/inputs/receivables.csv": "39a2a5d6218a88de29bd959b24fca1f27255315624b754e71d595f00814ce955",
+    "cases/cash_forecast_001/inputs/recurring_expenses.csv": "5da22a342c239177d55a83bf437303c6f3811ecd9789c94e2965d112db2f5150",
+    "reference/cash_forecast_001/forecast.json": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747"
+  }
+}

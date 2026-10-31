@@ -1,0 +1,471 @@
+[
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-01-A",
+    "week": 1,
+    "field": "receipts",
+    "amount": "22500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-01-B",
+    "week": 1,
+    "field": "receipts",
+    "amount": "22500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-02-A",
+    "week": 2,
+    "field": "receipts",
+    "amount": "27500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-02-B",
+    "week": 2,
+    "field": "receipts",
+    "amount": "27500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-03-A",
+    "week": 3,
+    "field": "receipts",
+    "amount": "32500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-03-B",
+    "week": 3,
+    "field": "receipts",
+    "amount": "32500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-04-A",
+    "week": 4,
+    "field": "receipts",
+    "amount": "20000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-04-B",
+    "week": 4,
+    "field": "receipts",
+    "amount": "20000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-05-A",
+    "week": 5,
+    "field": "receipts",
+    "amount": "17500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-05-B",
+    "week": 5,
+    "field": "receipts",
+    "amount": "17500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-06-A",
+    "week": 6,
+    "field": "receipts",
+    "amount": "15000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-06-B",
+    "week": 6,
+    "field": "receipts",
+    "amount": "15000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-07-A",
+    "week": 7,
+    "field": "receipts",
+    "amount": "90000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-07-B",
+    "week": 7,
+    "field": "receipts",
+    "amount": "90000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-08-A",
+    "week": 8,
+    "field": "receipts",
+    "amount": "80000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-08-B",
+    "week": 8,
+    "field": "receipts",
+    "amount": "80000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-09-A",
+    "week": 9,
+    "field": "receipts",
+    "amount": "45000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-09-B",
+    "week": 9,
+    "field": "receipts",
+    "amount": "45000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-10-A",
+    "week": 10,
+    "field": "receipts",
+    "amount": "40000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-10-B",
+    "week": 10,
+    "field": "receipts",
+    "amount": "40000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-11-A",
+    "week": 11,
+    "field": "receipts",
+    "amount": "37500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-11-B",
+    "week": 11,
+    "field": "receipts",
+    "amount": "37500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-12-A",
+    "week": 12,
+    "field": "receipts",
+    "amount": "50000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-12-B",
+    "week": 12,
+    "field": "receipts",
+    "amount": "50000.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-13-A",
+    "week": 13,
+    "field": "receipts",
+    "amount": "47500.00"
+  },
+  {
+    "source_file": "receivables.csv",
+    "record_id": "AR-13-B",
+    "week": 13,
+    "field": "receipts",
+    "amount": "47500.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-01",
+    "week": 1,
+    "field": "supplier_payments",
+    "amount": "35000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-02",
+    "week": 2,
+    "field": "supplier_payments",
+    "amount": "40000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-03",
+    "week": 3,
+    "field": "supplier_payments",
+    "amount": "45000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "TAX-03",
+    "week": 3,
+    "field": "tax_payments",
+    "amount": "12000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-04",
+    "week": 4,
+    "field": "supplier_payments",
+    "amount": "80000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "FREIGHT-04",
+    "week": 4,
+    "field": "other_external_payments",
+    "amount": "5000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-05",
+    "week": 5,
+    "field": "supplier_payments",
+    "amount": "120000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-06",
+    "week": 6,
+    "field": "supplier_payments",
+    "amount": "75000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "TAX-06",
+    "week": 6,
+    "field": "tax_payments",
+    "amount": "12000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "FREIGHT-06",
+    "week": 6,
+    "field": "other_external_payments",
+    "amount": "5000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-07",
+    "week": 7,
+    "field": "supplier_payments",
+    "amount": "35000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-08",
+    "week": 8,
+    "field": "supplier_payments",
+    "amount": "40000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-09",
+    "week": 9,
+    "field": "supplier_payments",
+    "amount": "45000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "TAX-09",
+    "week": 9,
+    "field": "tax_payments",
+    "amount": "12000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-10",
+    "week": 10,
+    "field": "supplier_payments",
+    "amount": "50000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-11",
+    "week": 11,
+    "field": "supplier_payments",
+    "amount": "40000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-12",
+    "week": 12,
+    "field": "supplier_payments",
+    "amount": "45000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "TAX-12",
+    "week": 12,
+    "field": "tax_payments",
+    "amount": "12000.00"
+  },
+  {
+    "source_file": "payables.csv",
+    "record_id": "AP-13",
+    "week": 13,
+    "field": "supplier_payments",
+    "amount": "40000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-01",
+    "week": 1,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "RENT-01",
+    "week": 1,
+    "field": "rent_payments",
+    "amount": "8000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-02",
+    "week": 2,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "PAYROLL-02",
+    "week": 2,
+    "field": "payroll_payments",
+    "amount": "24000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-03",
+    "week": 3,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-04",
+    "week": 4,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "PAYROLL-04",
+    "week": 4,
+    "field": "payroll_payments",
+    "amount": "24000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-05",
+    "week": 5,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "RENT-05",
+    "week": 5,
+    "field": "rent_payments",
+    "amount": "8000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-06",
+    "week": 6,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "PAYROLL-06",
+    "week": 6,
+    "field": "payroll_payments",
+    "amount": "24000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-07",
+    "week": 7,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-08",
+    "week": 8,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "PAYROLL-08",
+    "week": 8,
+    "field": "payroll_payments",
+    "amount": "24000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-09",
+    "week": 9,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "RENT-09",
+    "week": 9,
+    "field": "rent_payments",
+    "amount": "8000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-10",
+    "week": 10,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "PAYROLL-10",
+    "week": 10,
+    "field": "payroll_payments",
+    "amount": "24000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-11",
+    "week": 11,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-12",
+    "week": 12,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "PAYROLL-12",
+    "week": 12,
+    "field": "payroll_payments",
+    "amount": "24000.00"
+  },
+  {
+    "source_file": "recurring_expenses.csv",
+    "record_id": "OTHER_RECURRING-13",
+    "week": 13,
+    "field": "other_recurring_payments",
+    "amount": "2000.00"
+  }
+]

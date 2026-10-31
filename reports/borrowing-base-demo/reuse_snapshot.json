@@ -1,0 +1,44 @@
+{
+  "case_id": "borrowing_base_002",
+  "grader_version": "bb-0.1.0",
+  "reference_sha256": "5866698763960143cf69fca6190bded4ea50556db697aaea8d1a6c4fea723189",
+  "numerical_score": 99.4286,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "status": "numerical_fail",
+  "errors": [],
+  "mismatches": [
+    {
+      "group": "concentration",
+      "path": "weeks[3].effective_limit",
+      "expected": "0.00",
+      "submitted": "200000.00",
+      "difference": "200000.00"
+    }
+  ],
+  "groups": {
+    "eligibility": {
+      "passed": 37,
+      "checks": 37,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 34,
+      "checks": 35,
+      "score": 19.4286
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "forecast_sha256": "06b9d6bcad6ad76af53c5ad1ea70501c7b6692bccce34c6a8df1e37d1554e14a",
+  "analysis_sha256": "219be8c95ac846cc0d9e35badb0c6f4cff83b09726f46c7ab182dda6780da240",
+  "analysis_word_count": 525
+}

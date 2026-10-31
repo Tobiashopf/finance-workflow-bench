@@ -1,0 +1,74 @@
+{
+  "grader_version": "0.1.0",
+  "case_id": "cash_forecast_001",
+  "reference_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "status": "explanation_review_pending",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "groups": {
+    "operating": {
+      "weight": 30,
+      "checks": 91,
+      "passed": 91,
+      "score": 30.0
+    },
+    "cash": {
+      "weight": 20,
+      "checks": 51,
+      "passed": 51,
+      "score": 20.0
+    },
+    "financing": {
+      "weight": 30,
+      "checks": 90,
+      "passed": 90,
+      "score": 30.0
+    },
+    "liquidity": {
+      "weight": 10,
+      "checks": 52,
+      "passed": 52,
+      "score": 10.0
+    },
+    "exceptions": {
+      "weight": 10,
+      "checks": 11,
+      "passed": 11,
+      "score": 10.0
+    }
+  },
+  "mismatches": [],
+  "schema_errors": [],
+  "artifact_errors": [],
+  "explanation": {
+    "status": "explanation_review_pending"
+  },
+  "forecast_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+  "analysis_word_count": 468,
+  "human_review_template": {
+    "grader_version": "0.1.0",
+    "forecast_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+    "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

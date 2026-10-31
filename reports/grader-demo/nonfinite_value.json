@@ -1,0 +1,22 @@
+{
+  "grader_version": "0.1.0",
+  "case_id": "cash_forecast_001",
+  "reference_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "status": "invalid_submission",
+  "numerical_score": 0.0,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "groups": {},
+  "mismatches": [],
+  "schema_errors": [
+    {
+      "path": "$.weeks[0].receipts",
+      "message": "String does not match required format"
+    }
+  ],
+  "artifact_errors": [],
+  "explanation": {
+    "status": "not_reviewable"
+  },
+  "forecast_sha256": "c280e9273e88e17d1be2e786c50ad6477d2e59f5dbccebe0a1598e09d49a8657"
+}

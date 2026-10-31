@@ -1,0 +1,22 @@
+{
+  "grader_version": "0.1.0",
+  "case_id": "cash_forecast_001",
+  "reference_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "status": "invalid_submission",
+  "numerical_score": 0.0,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "groups": {},
+  "mismatches": [],
+  "schema_errors": [
+    {
+      "path": "$.score",
+      "message": "Unexpected field"
+    }
+  ],
+  "artifact_errors": [],
+  "explanation": {
+    "status": "not_reviewable"
+  },
+  "forecast_sha256": "af926c6e0d209a39dad2a76a4139e8999eb8373467ccd3138ed6e5be70c756c6"
+}

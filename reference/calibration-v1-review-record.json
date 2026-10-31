@@ -1,0 +1,73 @@
+{
+  "status": "project_owner_reference_review_confirmed",
+  "reviewer": "Tobias Hopf",
+  "operator_confirmation": "Tudo conferido",
+  "scope": "Four complete calibration-v1 reference trajectories and review material",
+  "cases": {
+    "bb_rounding_003": {
+      "reference_sha256": "4d4fb37339b69147bef0763f40facda1a317ceac91d489c6dc584ff35912123c",
+      "package_sha256": "97c50a8eea6e6d3bdbf839173450de49f248e88c247f983b884f9c888eec316d",
+      "opening_contract": {
+        "as_of_date": "2027-01-03",
+        "currency": "USD",
+        "cash": "60000.00",
+        "debt": "150002.50"
+      },
+      "checks": {
+        "eligibility": 17,
+        "concentration": 29,
+        "financing": 52,
+        "violations": 28
+      }
+    },
+    "bb_customer_004": {
+      "reference_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+      "package_sha256": "d7e4f30c2d3a059943f3a99a27f9bf45669eaa3e0e6d79e9dab4c3152c2c5906",
+      "opening_contract": {
+        "as_of_date": "2027-01-03",
+        "currency": "USD",
+        "cash": "60000.00",
+        "debt": "150000.00"
+      },
+      "checks": {
+        "eligibility": 28,
+        "concentration": 32,
+        "financing": 52,
+        "violations": 28
+      }
+    },
+    "bb_cure_005": {
+      "reference_sha256": "d6ef8317a5db707f3c76e38c637e96b3561c79245a3dd2386aa42b6b40d7d627",
+      "package_sha256": "979a8223f4c9b5d20321370bcf01d4db8a2fd70216a346391ba3d0d67b1fcd8c",
+      "opening_contract": {
+        "as_of_date": "2027-01-03",
+        "currency": "USD",
+        "cash": "60000.00",
+        "debt": "150000.00"
+      },
+      "checks": {
+        "eligibility": 18,
+        "concentration": 30,
+        "financing": 52,
+        "violations": 28
+      }
+    },
+    "bb_release_006": {
+      "reference_sha256": "f7dd58061c7982682db9d10795cf307f829d6e88fae0d09fe8f764a4ee816f67",
+      "package_sha256": "62d52d3ccafeb49d5008e9d79fae89c364375850ce5f83b195c24fcf117a648a",
+      "opening_contract": {
+        "as_of_date": "2027-01-03",
+        "currency": "USD",
+        "cash": "60000.00",
+        "debt": "150000.00"
+      },
+      "checks": {
+        "eligibility": 16,
+        "concentration": 28,
+        "financing": 52,
+        "violations": 28
+      }
+    }
+  },
+  "limitations": "Owner review is not an independent audit and does not approve future model submissions. Earlier generated pending-review reports predate this record."
+}

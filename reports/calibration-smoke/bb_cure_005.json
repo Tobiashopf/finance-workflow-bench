@@ -1,0 +1,36 @@
+{
+  "case_id": "bb_cure_005",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "d6ef8317a5db707f3c76e38c637e96b3561c79245a3dd2386aa42b6b40d7d627",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "status": "explanation_review_pending",
+  "errors": [],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 18,
+      "checks": 18,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 30,
+      "checks": 30,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "forecast_sha256": "d6ef8317a5db707f3c76e38c637e96b3561c79245a3dd2386aa42b6b40d7d627",
+  "analysis_sha256": "10b996c0bdcf61530665d3c999a9962425cd67eae209e7d404c156672cd05011",
+  "analysis_word_count": 327
+}

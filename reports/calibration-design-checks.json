@@ -1,0 +1,97 @@
+{
+  "kind": "design_checks_not_model_results",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "rounding",
+      "result_cents": [
+        24000006,
+        6000001,
+        18000003,
+        14400002,
+        14400002
+      ],
+      "passed": true
+    },
+    {
+      "check": "customer_aggregation",
+      "result_cents": [
+        24000000,
+        6000000,
+        18000000,
+        14400000,
+        14400000
+      ],
+      "passed": true
+    },
+    {
+      "check": "full_cure_and_sweep",
+      "result_cents": {
+        "interest": 30000,
+        "cash_before_financing": 9970000,
+        "required_cure": 4600000,
+        "actual_cure": 4600000,
+        "draw": 0,
+        "voluntary_repayment": 370000,
+        "closing_cash": 5000000,
+        "closing_debt": 10030000,
+        "overadvance": 0,
+        "buffer_shortfall": 0,
+        "cash_deficit": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "full_cure_buffer_breach",
+      "result_cents": {
+        "interest": 30000,
+        "cash_before_financing": 8970000,
+        "required_cure": 4600000,
+        "actual_cure": 4600000,
+        "draw": 0,
+        "voluntary_repayment": 0,
+        "closing_cash": 4370000,
+        "closing_debt": 10400000,
+        "overadvance": 0,
+        "buffer_shortfall": 630000,
+        "cash_deficit": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "zero_collateral_solvent",
+      "result_cents": {
+        "interest": 30000,
+        "cash_before_financing": 21970000,
+        "required_cure": 15000000,
+        "actual_cure": 15000000,
+        "draw": 0,
+        "voluntary_repayment": 0,
+        "closing_cash": 6970000,
+        "closing_debt": 0,
+        "overadvance": 0,
+        "buffer_shortfall": 0,
+        "cash_deficit": 0
+      },
+      "passed": true
+    },
+    {
+      "check": "half_cent_interest",
+      "result_cents": {
+        "interest": 30001,
+        "cash_before_financing": 5969999,
+        "required_cure": 0,
+        "actual_cure": 0,
+        "draw": 0,
+        "voluntary_repayment": 969999,
+        "closing_cash": 5000000,
+        "closing_debt": 14030251,
+        "overadvance": 0,
+        "buffer_shortfall": 0,
+        "cash_deficit": 0
+      },
+      "passed": true
+    }
+  ],
+  "limitations": "Isolated examples only. Full cases, schemas, graders and packages remain to be built. Both implementations are AI-assisted, not independent human validation."
+}

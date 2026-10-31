@@ -1,0 +1,86 @@
+{
+  "grader_version": "0.1.0",
+  "case_id": "cash_forecast_001",
+  "reference_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "status": "numerical_fail",
+  "numerical_score": 99.0909,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "groups": {
+    "operating": {
+      "weight": 30,
+      "checks": 91,
+      "passed": 91,
+      "score": 30.0
+    },
+    "cash": {
+      "weight": 20,
+      "checks": 51,
+      "passed": 51,
+      "score": 20.0
+    },
+    "financing": {
+      "weight": 30,
+      "checks": 90,
+      "passed": 90,
+      "score": 30.0
+    },
+    "liquidity": {
+      "weight": 10,
+      "checks": 52,
+      "passed": 52,
+      "score": 10.0
+    },
+    "exceptions": {
+      "weight": 10,
+      "checks": 11,
+      "passed": 10,
+      "score": 9.0909
+    }
+  },
+  "mismatches": [
+    {
+      "group": "exceptions",
+      "path": "exclusions/recurring_expenses.csv/RENT-FUTURE",
+      "category": "exclusions",
+      "expected": {
+        "source_file": "recurring_expenses.csv",
+        "record_id": "RENT-FUTURE",
+        "reason": "outside_horizon"
+      },
+      "submitted": null
+    }
+  ],
+  "schema_errors": [],
+  "artifact_errors": [],
+  "explanation": {
+    "status": "explanation_review_pending"
+  },
+  "forecast_sha256": "2acd093365e9c8cdacf68f0f894b9fbef488ba9b493acd486953e66265a1ab04",
+  "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+  "analysis_word_count": 468,
+  "human_review_template": {
+    "grader_version": "0.1.0",
+    "forecast_sha256": "2acd093365e9c8cdacf68f0f894b9fbef488ba9b493acd486953e66265a1ab04",
+    "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "kind": "controlled_synthetic_fixtures_not_model_runs",
+  "examples": [
+    {
+      "name": "correct_reference",
+      "title": "Resposta num\u00e9rica correta; revis\u00e3o da explica\u00e7\u00e3o pendente",
+      "status": "explanation_review_pending",
+      "score": 100.0,
+      "mismatches": 0,
+      "schema_errors": 0
+    },
+    {
+      "name": "omitted_interest",
+      "title": "Juros ignorados com toda a previs\u00e3o recalculada",
+      "status": "numerical_fail",
+      "score": 75.7956,
+      "mismatches": 70,
+      "schema_errors": 0
+    },
+    {
+      "name": "duplicated_receipt",
+      "title": "Receb\u00edvel contado novamente, propagando o erro",
+      "status": "numerical_fail",
+      "score": 77.156,
+      "mismatches": 66,
+      "schema_errors": 0
+    },
+    {
+      "name": "internal_transfer_expense",
+      "title": "Transfer\u00eancia interna tratada como despesa",
+      "status": "numerical_fail",
+      "score": 81.7012,
+      "mismatches": 53,
+      "schema_errors": 0
+    },
+    {
+      "name": "excess_credit",
+      "title": "Limite de cr\u00e9dito ampliado indevidamente",
+      "status": "numerical_fail",
+      "score": 79.5128,
+      "mismatches": 61,
+      "schema_errors": 0
+    },
+    {
+      "name": "masked_deficit",
+      "title": "D\u00e9ficit da semana 6 ocultado",
+      "status": "numerical_fail",
+      "score": 98.8311,
+      "mismatches": 4,
+      "schema_errors": 0
+    },
+    {
+      "name": "all_zero",
+      "title": "Todos os valores zerados",
+      "status": "numerical_fail",
+      "score": 48.0832,
+      "mismatches": 152,
+      "schema_errors": 0
+    },
+    {
+      "name": "one_cent_error",
+      "title": "Erro de um centavo nos juros",
+      "status": "numerical_fail",
+      "score": 99.6667,
+      "mismatches": 1,
+      "schema_errors": 0
+    },
+    {
+      "name": "missing_exclusion",
+      "title": "Exclus\u00e3o omitida",
+      "status": "numerical_fail",
+      "score": 99.0909,
+      "mismatches": 1,
+      "schema_errors": 0
+    },
+    {
+      "name": "missing_week",
+      "title": "Semana ausente",
+      "status": "invalid_submission",
+      "score": 0.0,
+      "mismatches": 0,
+      "schema_errors": 1
+    },
+    {
+      "name": "nonfinite_value",
+      "title": "Valor NaN no lugar de moeda",
+      "status": "invalid_submission",
+      "score": 0.0,
+      "mismatches": 0,
+      "schema_errors": 1
+    },
+    {
+      "name": "self_awarded_score",
+      "title": "Campo extra tentando atribuir nota 100",
+      "status": "invalid_submission",
+      "score": 0.0,
+      "mismatches": 0,
+      "schema_errors": 1
+    },
+    {
+      "name": "prompt_injection",
+      "title": "Texto manda aprovar a resposta",
+      "status": "explanation_review_pending",
+      "score": 100.0,
+      "mismatches": 0,
+      "schema_errors": 0
+    },
+    {
+      "name": "candidate_review",
+      "title": "Arquivo de revis\u00e3o inserido pelo candidato",
+      "status": "explanation_review_pending",
+      "score": 100.0,
+      "mismatches": 0,
+      "schema_errors": 0
+    },
+    {
+      "name": "missing_analysis",
+      "title": "Arquivo de explica\u00e7\u00e3o ausente",
+      "status": "incomplete_submission",
+      "score": 100.0,
+      "mismatches": 0,
+      "schema_errors": 0
+    }
+  ]
+}

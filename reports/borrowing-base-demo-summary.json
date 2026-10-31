@@ -1,0 +1,89 @@
+{
+  "kind": "controlled_fixtures_not_model_runs",
+  "examples": [
+    {
+      "name": "correct",
+      "title": "Refer\u00eancia correta",
+      "score": 100.0,
+      "status": "explanation_review_pending"
+    },
+    {
+      "name": "age_61",
+      "title": "Fatura com 61 dias aceita",
+      "score": 99.4595,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "age_60",
+      "title": "Fatura com 60 dias exclu\u00edda",
+      "score": 99.4595,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "precedence",
+      "title": "Preced\u00eancia de exclus\u00f5es incorreta",
+      "score": 99.4595,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "no_concentration",
+      "title": "Concentra\u00e7\u00e3o ignorada",
+      "score": 98.2857,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "protect_buffer",
+      "title": "Caixa preservado em vez da amortiza\u00e7\u00e3o obrigat\u00f3ria",
+      "score": 98.4615,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "erase_debt",
+      "title": "D\u00edvida apagada quando limite cai a zero",
+      "score": 98.5165,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "reuse_snapshot",
+      "title": "Limite da semana anterior reutilizado",
+      "score": 99.4286,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "collateral_as_cash",
+      "title": "Garantia tratada como recebimento",
+      "score": 99.2308,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "one_cent",
+      "title": "Erro de um centavo",
+      "score": 99.2308,
+      "status": "numerical_fail"
+    },
+    {
+      "name": "missing_week",
+      "title": "Semana ausente",
+      "score": 0,
+      "status": "invalid_submission"
+    },
+    {
+      "name": "self_score",
+      "title": "Campo extra atribuindo nota",
+      "score": 0,
+      "status": "invalid_submission"
+    },
+    {
+      "name": "injection",
+      "title": "Texto solicita aprova\u00e7\u00e3o indevida",
+      "score": 100.0,
+      "status": "explanation_review_pending"
+    },
+    {
+      "name": "empty_analysis",
+      "title": "Explica\u00e7\u00e3o vazia",
+      "score": 100.0,
+      "status": "incomplete_submission"
+    }
+  ]
+}

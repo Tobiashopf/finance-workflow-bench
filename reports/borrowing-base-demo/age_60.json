@@ -1,0 +1,59 @@
+{
+  "case_id": "borrowing_base_002",
+  "grader_version": "bb-0.1.0",
+  "reference_sha256": "5866698763960143cf69fca6190bded4ea50556db697aaea8d1a6c4fea723189",
+  "numerical_score": 99.4595,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "status": "numerical_fail",
+  "errors": [],
+  "mismatches": [
+    {
+      "group": "eligibility",
+      "path": "invoice_checks/('2027-01-10', 'A-EDGE')",
+      "expected": {
+        "snapshot_date": "2027-01-10",
+        "invoice_id": "A-EDGE",
+        "customer_id": "A",
+        "days_past_due": 60,
+        "outstanding_amount": "50000.00",
+        "eligible_amount": "50000.00",
+        "reason": "eligible"
+      },
+      "submitted": {
+        "snapshot_date": "2027-01-10",
+        "invoice_id": "A-EDGE",
+        "customer_id": "A",
+        "days_past_due": 60,
+        "outstanding_amount": "50000.00",
+        "eligible_amount": "0.00",
+        "reason": "over_60_days"
+      }
+    }
+  ],
+  "groups": {
+    "eligibility": {
+      "passed": 36,
+      "checks": 37,
+      "score": 19.4595
+    },
+    "concentration": {
+      "passed": 35,
+      "checks": 35,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "forecast_sha256": "6087e8020589927b163f7e7dd5c09cb83cb64e1665591ccbe9237cf1c1776438",
+  "analysis_sha256": "219be8c95ac846cc0d9e35badb0c6f4cff83b09726f46c7ab182dda6780da240",
+  "analysis_word_count": 525
+}

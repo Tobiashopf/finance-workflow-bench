@@ -1,0 +1,18 @@
+{
+  "case_id": "borrowing_base_002",
+  "grader_version": "bb-0.1.0",
+  "reference_sha256": "5866698763960143cf69fca6190bded4ea50556db697aaea8d1a6c4fea723189",
+  "numerical_score": 0,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "status": "invalid_submission",
+  "errors": [
+    {
+      "path": "$.weeks",
+      "message": "Array length outside allowed range"
+    }
+  ],
+  "mismatches": [],
+  "groups": {},
+  "forecast_sha256": "02561034c02d3319dcf33e1c6f127c05096a10d0b5942db06f877750463084a4"
+}

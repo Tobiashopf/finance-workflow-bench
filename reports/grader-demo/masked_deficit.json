@@ -1,0 +1,106 @@
+{
+  "grader_version": "0.1.0",
+  "case_id": "cash_forecast_001",
+  "reference_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "status": "numerical_fail",
+  "numerical_score": 98.8311,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "groups": {
+    "operating": {
+      "weight": 30,
+      "checks": 91,
+      "passed": 91,
+      "score": 30.0
+    },
+    "cash": {
+      "weight": 20,
+      "checks": 51,
+      "passed": 49,
+      "score": 19.2157
+    },
+    "financing": {
+      "weight": 30,
+      "checks": 90,
+      "passed": 90,
+      "score": 30.0
+    },
+    "liquidity": {
+      "weight": 10,
+      "checks": 52,
+      "passed": 50,
+      "score": 9.6154
+    },
+    "exceptions": {
+      "weight": 10,
+      "checks": 11,
+      "passed": 11,
+      "score": 10.0
+    }
+  },
+  "mismatches": [
+    {
+      "group": "cash",
+      "path": "weeks[5].closing_cash",
+      "category": "closing_cash",
+      "expected": "-39945.80",
+      "submitted": "0.00",
+      "difference": "39945.80"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[5].unfunded_cash_deficit",
+      "category": "unfunded_cash_deficit",
+      "expected": "39945.80",
+      "submitted": "0.00",
+      "difference": "-39945.80"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[5].unfunded_deficit",
+      "category": "unfunded_deficit",
+      "expected": true,
+      "submitted": false
+    },
+    {
+      "group": "cash",
+      "path": "weeks[6].cash_continuity",
+      "category": "cash_continuity",
+      "expected": "0.00",
+      "submitted": "-39945.80",
+      "difference": "-39945.80"
+    }
+  ],
+  "schema_errors": [],
+  "artifact_errors": [],
+  "explanation": {
+    "status": "explanation_review_pending"
+  },
+  "forecast_sha256": "ef6e81597533496b19dc2a0e03acef184591093545d011b35884649c4565a645",
+  "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+  "analysis_word_count": 468,
+  "human_review_template": {
+    "grader_version": "0.1.0",
+    "forecast_sha256": "ef6e81597533496b19dc2a0e03acef184591093545d011b35884649c4565a645",
+    "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

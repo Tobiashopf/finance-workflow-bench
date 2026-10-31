@@ -1,0 +1,63 @@
+{
+  "kind": "reference_crosscheck_not_model_results",
+  "cases": [
+    {
+      "case_id": "bb_rounding_003",
+      "status": "passed",
+      "weeks": 4,
+      "invoice_observations": 13,
+      "customer_observations": 13,
+      "input_sha256": {
+        "opening_position.json": "e4d4782b9eab4347f4cd27affac700eaab35a563b078955fe3243ea67211e6c8",
+        "facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+        "snapshot_dates.csv": "528e8a957a3c5d4240653d82fee99440482803c11761fb2f3134d7fbccc4cf9f",
+        "cash_events.csv": "4baa5179a850cbc39027e2f279bfd2db410008db64e6ad45fcb70f922d23e77b",
+        "receivables_snapshots.csv": "c801d367e28e05571d656caf8c358c2fa0f685ed99e24e32bbe1a4f332c93091"
+      }
+    },
+    {
+      "case_id": "bb_customer_004",
+      "status": "passed",
+      "weeks": 4,
+      "invoice_observations": 24,
+      "customer_observations": 16,
+      "input_sha256": {
+        "opening_position.json": "a20ac237e76aa8d4a057e27b333c4d1f90cb14632727615e0fa654c7985b471b",
+        "facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+        "snapshot_dates.csv": "528e8a957a3c5d4240653d82fee99440482803c11761fb2f3134d7fbccc4cf9f",
+        "cash_events.csv": "24a3c74d843b40f819ed82ffdaa49924ea005a4e3d03f6ab0617a5a18ceabdca",
+        "receivables_snapshots.csv": "d69a59b9cb9acee0e2b3052775c91659890fb080a2bd1499fd4e043ec313508e"
+      }
+    },
+    {
+      "case_id": "bb_cure_005",
+      "status": "passed",
+      "weeks": 4,
+      "invoice_observations": 14,
+      "customer_observations": 14,
+      "input_sha256": {
+        "opening_position.json": "a20ac237e76aa8d4a057e27b333c4d1f90cb14632727615e0fa654c7985b471b",
+        "facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+        "snapshot_dates.csv": "528e8a957a3c5d4240653d82fee99440482803c11761fb2f3134d7fbccc4cf9f",
+        "cash_events.csv": "0c77e9d396a2e38f1f7e8761ce24ab545ff137af2d2e843205253de70c9c77c7",
+        "receivables_snapshots.csv": "c6f3387b1a6be8142a1d9060a4efb39726f5f4698c8f86fd9e23f8bde6f67f02"
+      }
+    },
+    {
+      "case_id": "bb_release_006",
+      "status": "passed",
+      "weeks": 4,
+      "invoice_observations": 12,
+      "customer_observations": 12,
+      "input_sha256": {
+        "opening_position.json": "a20ac237e76aa8d4a057e27b333c4d1f90cb14632727615e0fa654c7985b471b",
+        "facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+        "snapshot_dates.csv": "528e8a957a3c5d4240653d82fee99440482803c11761fb2f3134d7fbccc4cf9f",
+        "cash_events.csv": "29fc666b6f4d52966b943907ec21dbfdcad82b8cc86bb040a83444e22a361bf4",
+        "receivables_snapshots.csv": "a89ad60f8d0e41ce66103b4975a8e4c13c9df96c57000db1020e3549c0a0dc36"
+      }
+    }
+  ],
+  "method": "Decimal reference versus integer-cent eligibility and net-position financing; full JSON equality",
+  "limitations": "AI-assisted implementations, not an independent audit. Full human reference review pending."
+}

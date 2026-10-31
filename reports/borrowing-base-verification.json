@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "case_id": "borrowing_base_002",
+  "weeks_compared": 4,
+  "invoice_observations_compared": 33,
+  "customer_observations_compared": 19,
+  "reference_sha256": "5866698763960143cf69fca6190bded4ea50556db697aaea8d1a6c4fea723189",
+  "input_sha256": {
+    "cash_events.csv": "d729f70ae47087a57ef2dc677d4fb7605a5142abab56394e3d8036cf11f0d884",
+    "facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+    "opening_position.json": "fafa407aaf4640912908074fb05f78bb33587d459a77b91869e5ba6b91407b5a",
+    "receivables_snapshots.csv": "b646c67d2de63fc7c5131b40087b57cadd84bd08c6f62f8f8b50ee300e13bba8",
+    "snapshot_dates.csv": "0149db3354a9e7f1b983cee162b0b8ab35929ebe4e77c612deba6518e7f49af6"
+  },
+  "method": "Integer cents, independent eligibility pipeline, net-position financing; no reference imports",
+  "limitations": "Both implementations authored in the same AI-assisted session. Rules reviewed by owner; detailed dataset/reference review pending."
+}

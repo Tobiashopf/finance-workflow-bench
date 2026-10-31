@@ -1,0 +1,9 @@
+{
+  "case_id": "cash_forecast_001",
+  "reviewer": "Tobias Hopf",
+  "scope": "Financial scenario and reference solution reviewed by the project owner",
+  "confirmation": "User confirmed in the project conversation: Conferido e revisado, vamos seguir",
+  "forecast_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "external_independent_review": false,
+  "note": "This records the owner's confirmation, not a signed audit or a per-submission explanation review. Re-review is required if the reference changes."
+}

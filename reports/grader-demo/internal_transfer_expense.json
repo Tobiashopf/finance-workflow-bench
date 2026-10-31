@@ -1,0 +1,499 @@
+{
+  "grader_version": "0.1.0",
+  "case_id": "cash_forecast_001",
+  "reference_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "status": "numerical_fail",
+  "numerical_score": 81.7012,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "groups": {
+    "operating": {
+      "weight": 30,
+      "checks": 91,
+      "passed": 90,
+      "score": 29.6703
+    },
+    "cash": {
+      "weight": 20,
+      "checks": 51,
+      "passed": 33,
+      "score": 12.9412
+    },
+    "financing": {
+      "weight": 30,
+      "checks": 90,
+      "passed": 59,
+      "score": 19.6667
+    },
+    "liquidity": {
+      "weight": 10,
+      "checks": 52,
+      "passed": 49,
+      "score": 9.4231
+    },
+    "exceptions": {
+      "weight": 10,
+      "checks": 11,
+      "passed": 11,
+      "score": 10.0
+    }
+  },
+  "mismatches": [
+    {
+      "group": "operating",
+      "path": "weeks[4].other_external_payments",
+      "category": "other_external_payments",
+      "expected": "0.00",
+      "submitted": "25000.00",
+      "difference": "25000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[4].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "-45212.67",
+      "submitted": "-70212.67",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[4].closing_cash",
+      "category": "closing_cash",
+      "expected": "48454.20",
+      "submitted": "23454.20",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[4].minimum_cash_shortfall",
+      "category": "minimum_cash_shortfall",
+      "expected": "1545.80",
+      "submitted": "26545.80",
+      "difference": "25000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[5].opening_cash",
+      "category": "opening_cash",
+      "expected": "48454.20",
+      "submitted": "23454.20",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[5].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "-39945.80",
+      "submitted": "-64945.80",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[5].closing_cash",
+      "category": "closing_cash",
+      "expected": "-39945.80",
+      "submitted": "-64945.80",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[5].minimum_cash_shortfall",
+      "category": "minimum_cash_shortfall",
+      "expected": "89945.80",
+      "submitted": "114945.80",
+      "difference": "25000.00"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[5].unfunded_cash_deficit",
+      "category": "unfunded_cash_deficit",
+      "expected": "39945.80",
+      "submitted": "64945.80",
+      "difference": "25000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[6].opening_cash",
+      "category": "opening_cash",
+      "expected": "-39945.80",
+      "submitted": "-64945.80",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[6].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "102654.20",
+      "submitted": "77654.20",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[6].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "52654.20",
+      "submitted": "27654.20",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[6].closing_principal",
+      "category": "closing_principal",
+      "expected": "147345.80",
+      "submitted": "172345.80",
+      "difference": "25000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[6].credit_available",
+      "category": "credit_available",
+      "expected": "52654.20",
+      "submitted": "27654.20",
+      "difference": "-25000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[7].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "143705.31",
+      "submitted": "143655.31",
+      "difference": "-50.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].opening_principal",
+      "category": "opening_principal",
+      "expected": "147345.80",
+      "submitted": "172345.80",
+      "difference": "25000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].interest_paid",
+      "category": "interest_paid",
+      "expected": "294.69",
+      "submitted": "344.69",
+      "difference": "50.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "93705.31",
+      "submitted": "93655.31",
+      "difference": "-50.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].closing_principal",
+      "category": "closing_principal",
+      "expected": "53640.49",
+      "submitted": "78690.49",
+      "difference": "25050.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].credit_available",
+      "category": "credit_available",
+      "expected": "146359.51",
+      "submitted": "121309.51",
+      "difference": "-25050.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[8].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "72892.72",
+      "submitted": "72842.62",
+      "difference": "-50.10"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].opening_principal",
+      "category": "opening_principal",
+      "expected": "53640.49",
+      "submitted": "78690.49",
+      "difference": "25050.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].interest_paid",
+      "category": "interest_paid",
+      "expected": "107.28",
+      "submitted": "157.38",
+      "difference": "50.10"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "22892.72",
+      "submitted": "22842.62",
+      "difference": "-50.10"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].closing_principal",
+      "category": "closing_principal",
+      "expected": "30747.77",
+      "submitted": "55847.87",
+      "difference": "25100.10"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].credit_available",
+      "category": "credit_available",
+      "expected": "169252.23",
+      "submitted": "144152.13",
+      "difference": "-25100.10"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[9].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "53938.50",
+      "submitted": "53888.30",
+      "difference": "-50.20"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].opening_principal",
+      "category": "opening_principal",
+      "expected": "30747.77",
+      "submitted": "55847.87",
+      "difference": "25100.10"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].interest_paid",
+      "category": "interest_paid",
+      "expected": "61.50",
+      "submitted": "111.70",
+      "difference": "50.20"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "3938.50",
+      "submitted": "3888.30",
+      "difference": "-50.20"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].closing_principal",
+      "category": "closing_principal",
+      "expected": "26809.27",
+      "submitted": "51959.57",
+      "difference": "25150.30"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].credit_available",
+      "category": "credit_available",
+      "expected": "173190.73",
+      "submitted": "148040.43",
+      "difference": "-25150.30"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[10].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "82946.38",
+      "submitted": "82896.08",
+      "difference": "-50.30"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[10].closing_cash",
+      "category": "closing_cash",
+      "expected": "56137.11",
+      "submitted": "50000.00",
+      "difference": "-6137.11"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].opening_principal",
+      "category": "opening_principal",
+      "expected": "26809.27",
+      "submitted": "51959.57",
+      "difference": "25150.30"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].interest_paid",
+      "category": "interest_paid",
+      "expected": "53.62",
+      "submitted": "103.92",
+      "difference": "50.30"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "26809.27",
+      "submitted": "32896.08",
+      "difference": "6086.81"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].closing_principal",
+      "category": "closing_principal",
+      "expected": "0.00",
+      "submitted": "19063.49",
+      "difference": "19063.49"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].credit_available",
+      "category": "credit_available",
+      "expected": "200000.00",
+      "submitted": "180936.51",
+      "difference": "-19063.49"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[11].opening_cash",
+      "category": "opening_cash",
+      "expected": "56137.11",
+      "submitted": "50000.00",
+      "difference": "-6137.11"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[11].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "73137.11",
+      "submitted": "66961.87",
+      "difference": "-6175.24"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[11].closing_cash",
+      "category": "closing_cash",
+      "expected": "73137.11",
+      "submitted": "50000.00",
+      "difference": "-23137.11"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[11].opening_principal",
+      "category": "opening_principal",
+      "expected": "0.00",
+      "submitted": "19063.49",
+      "difference": "19063.49"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[11].interest_paid",
+      "category": "interest_paid",
+      "expected": "0.00",
+      "submitted": "38.13",
+      "difference": "38.13"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[11].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "0.00",
+      "submitted": "16961.87",
+      "difference": "16961.87"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[11].closing_principal",
+      "category": "closing_principal",
+      "expected": "0.00",
+      "submitted": "2101.62",
+      "difference": "2101.62"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[11].credit_available",
+      "category": "credit_available",
+      "expected": "200000.00",
+      "submitted": "197898.38",
+      "difference": "-2101.62"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[12].opening_cash",
+      "category": "opening_cash",
+      "expected": "73137.11",
+      "submitted": "50000.00",
+      "difference": "-23137.11"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[12].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "126137.11",
+      "submitted": "102995.80",
+      "difference": "-23141.31"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[12].closing_cash",
+      "category": "closing_cash",
+      "expected": "126137.11",
+      "submitted": "100894.18",
+      "difference": "-25242.93"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[12].opening_principal",
+      "category": "opening_principal",
+      "expected": "0.00",
+      "submitted": "2101.62",
+      "difference": "2101.62"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[12].interest_paid",
+      "category": "interest_paid",
+      "expected": "0.00",
+      "submitted": "4.20",
+      "difference": "4.20"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[12].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "0.00",
+      "submitted": "2101.62",
+      "difference": "2101.62"
+    }
+  ],
+  "schema_errors": [],
+  "artifact_errors": [],
+  "explanation": {
+    "status": "explanation_review_pending"
+  },
+  "forecast_sha256": "c7882ff6cb2946c28d4090b614ff64f4ae236fee8409aa7cd542d5fb4710f8ef",
+  "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+  "analysis_word_count": 468,
+  "human_review_template": {
+    "grader_version": "0.1.0",
+    "forecast_sha256": "c7882ff6cb2946c28d4090b614ff64f4ae236fee8409aa7cd542d5fb4710f8ef",
+    "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

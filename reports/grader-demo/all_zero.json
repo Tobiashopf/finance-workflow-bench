@@ -1,0 +1,1288 @@
+{
+  "grader_version": "0.1.0",
+  "case_id": "cash_forecast_001",
+  "reference_sha256": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+  "status": "numerical_fail",
+  "numerical_score": 48.0832,
+  "numerical_passed": false,
+  "overall_passed": false,
+  "groups": {
+    "operating": {
+      "weight": 30,
+      "checks": 91,
+      "passed": 37,
+      "score": 12.1978
+    },
+    "cash": {
+      "weight": 20,
+      "checks": 51,
+      "passed": 12,
+      "score": 4.7059
+    },
+    "financing": {
+      "weight": 30,
+      "checks": 90,
+      "passed": 37,
+      "score": 12.3333
+    },
+    "liquidity": {
+      "weight": 10,
+      "checks": 52,
+      "passed": 46,
+      "score": 8.8462
+    },
+    "exceptions": {
+      "weight": 10,
+      "checks": 11,
+      "passed": 11,
+      "score": 10.0
+    }
+  },
+  "mismatches": [
+    {
+      "group": "operating",
+      "path": "weeks[0].receipts",
+      "category": "receipts",
+      "expected": "45000.00",
+      "submitted": "0.00",
+      "difference": "-45000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[0].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "35000.00",
+      "submitted": "0.00",
+      "difference": "-35000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[0].rent_payments",
+      "category": "rent_payments",
+      "expected": "8000.00",
+      "submitted": "0.00",
+      "difference": "-8000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[0].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[0].opening_cash",
+      "category": "opening_cash",
+      "expected": "80000.00",
+      "submitted": "0.00",
+      "difference": "-80000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[0].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "79880.00",
+      "submitted": "0.00",
+      "difference": "-79880.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[0].closing_cash",
+      "category": "closing_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[0].opening_principal",
+      "category": "opening_principal",
+      "expected": "60000.00",
+      "submitted": "0.00",
+      "difference": "-60000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[0].interest_paid",
+      "category": "interest_paid",
+      "expected": "120.00",
+      "submitted": "0.00",
+      "difference": "-120.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[0].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "29880.00",
+      "submitted": "0.00",
+      "difference": "-29880.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[0].closing_principal",
+      "category": "closing_principal",
+      "expected": "30120.00",
+      "submitted": "0.00",
+      "difference": "-30120.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[0].credit_available",
+      "category": "credit_available",
+      "expected": "169880.00",
+      "submitted": "0.00",
+      "difference": "-169880.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[1].receipts",
+      "category": "receipts",
+      "expected": "55000.00",
+      "submitted": "0.00",
+      "difference": "-55000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[1].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "40000.00",
+      "submitted": "0.00",
+      "difference": "-40000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[1].payroll_payments",
+      "category": "payroll_payments",
+      "expected": "24000.00",
+      "submitted": "0.00",
+      "difference": "-24000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[1].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[1].opening_cash",
+      "category": "opening_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[1].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "38939.76",
+      "submitted": "0.00",
+      "difference": "-38939.76"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[1].closing_cash",
+      "category": "closing_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[1].opening_principal",
+      "category": "opening_principal",
+      "expected": "30120.00",
+      "submitted": "0.00",
+      "difference": "-30120.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[1].interest_paid",
+      "category": "interest_paid",
+      "expected": "60.24",
+      "submitted": "0.00",
+      "difference": "-60.24"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[1].credit_draw",
+      "category": "credit_draw",
+      "expected": "11060.24",
+      "submitted": "0.00",
+      "difference": "-11060.24"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[1].closing_principal",
+      "category": "closing_principal",
+      "expected": "41180.24",
+      "submitted": "0.00",
+      "difference": "-41180.24"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[1].credit_available",
+      "category": "credit_available",
+      "expected": "158819.76",
+      "submitted": "0.00",
+      "difference": "-158819.76"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[2].receipts",
+      "category": "receipts",
+      "expected": "65000.00",
+      "submitted": "0.00",
+      "difference": "-65000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[2].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "45000.00",
+      "submitted": "0.00",
+      "difference": "-45000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[2].tax_payments",
+      "category": "tax_payments",
+      "expected": "12000.00",
+      "submitted": "0.00",
+      "difference": "-12000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[2].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[2].opening_cash",
+      "category": "opening_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[2].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "55917.64",
+      "submitted": "0.00",
+      "difference": "-55917.64"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[2].closing_cash",
+      "category": "closing_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[2].opening_principal",
+      "category": "opening_principal",
+      "expected": "41180.24",
+      "submitted": "0.00",
+      "difference": "-41180.24"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[2].interest_paid",
+      "category": "interest_paid",
+      "expected": "82.36",
+      "submitted": "0.00",
+      "difference": "-82.36"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[2].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "5917.64",
+      "submitted": "0.00",
+      "difference": "-5917.64"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[2].closing_principal",
+      "category": "closing_principal",
+      "expected": "35262.60",
+      "submitted": "0.00",
+      "difference": "-35262.60"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[2].credit_available",
+      "category": "credit_available",
+      "expected": "164737.40",
+      "submitted": "0.00",
+      "difference": "-164737.40"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[3].receipts",
+      "category": "receipts",
+      "expected": "40000.00",
+      "submitted": "0.00",
+      "difference": "-40000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[3].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "80000.00",
+      "submitted": "0.00",
+      "difference": "-80000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[3].other_external_payments",
+      "category": "other_external_payments",
+      "expected": "5000.00",
+      "submitted": "0.00",
+      "difference": "-5000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[3].payroll_payments",
+      "category": "payroll_payments",
+      "expected": "24000.00",
+      "submitted": "0.00",
+      "difference": "-24000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[3].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[3].opening_cash",
+      "category": "opening_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[3].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "-21070.53",
+      "submitted": "0.00",
+      "difference": "21070.53"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[3].closing_cash",
+      "category": "closing_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[3].opening_principal",
+      "category": "opening_principal",
+      "expected": "35262.60",
+      "submitted": "0.00",
+      "difference": "-35262.60"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[3].interest_paid",
+      "category": "interest_paid",
+      "expected": "70.53",
+      "submitted": "0.00",
+      "difference": "-70.53"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[3].credit_draw",
+      "category": "credit_draw",
+      "expected": "71070.53",
+      "submitted": "0.00",
+      "difference": "-71070.53"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[3].closing_principal",
+      "category": "closing_principal",
+      "expected": "106333.13",
+      "submitted": "0.00",
+      "difference": "-106333.13"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[3].credit_available",
+      "category": "credit_available",
+      "expected": "93666.87",
+      "submitted": "0.00",
+      "difference": "-93666.87"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[4].receipts",
+      "category": "receipts",
+      "expected": "35000.00",
+      "submitted": "0.00",
+      "difference": "-35000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[4].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "120000.00",
+      "submitted": "0.00",
+      "difference": "-120000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[4].rent_payments",
+      "category": "rent_payments",
+      "expected": "8000.00",
+      "submitted": "0.00",
+      "difference": "-8000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[4].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[4].opening_cash",
+      "category": "opening_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[4].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "-45212.67",
+      "submitted": "0.00",
+      "difference": "45212.67"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[4].closing_cash",
+      "category": "closing_cash",
+      "expected": "48454.20",
+      "submitted": "0.00",
+      "difference": "-48454.20"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[4].opening_principal",
+      "category": "opening_principal",
+      "expected": "106333.13",
+      "submitted": "0.00",
+      "difference": "-106333.13"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[4].interest_paid",
+      "category": "interest_paid",
+      "expected": "212.67",
+      "submitted": "0.00",
+      "difference": "-212.67"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[4].credit_draw",
+      "category": "credit_draw",
+      "expected": "93666.87",
+      "submitted": "0.00",
+      "difference": "-93666.87"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[4].closing_principal",
+      "category": "closing_principal",
+      "expected": "200000.00",
+      "submitted": "0.00",
+      "difference": "-200000.00"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[4].minimum_cash_shortfall",
+      "category": "minimum_cash_shortfall",
+      "expected": "1545.80",
+      "submitted": "0.00",
+      "difference": "-1545.80"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[4].minimum_cash_breached",
+      "category": "minimum_cash_breached",
+      "expected": true,
+      "submitted": false
+    },
+    {
+      "group": "operating",
+      "path": "weeks[5].receipts",
+      "category": "receipts",
+      "expected": "30000.00",
+      "submitted": "0.00",
+      "difference": "-30000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[5].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "75000.00",
+      "submitted": "0.00",
+      "difference": "-75000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[5].tax_payments",
+      "category": "tax_payments",
+      "expected": "12000.00",
+      "submitted": "0.00",
+      "difference": "-12000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[5].other_external_payments",
+      "category": "other_external_payments",
+      "expected": "5000.00",
+      "submitted": "0.00",
+      "difference": "-5000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[5].payroll_payments",
+      "category": "payroll_payments",
+      "expected": "24000.00",
+      "submitted": "0.00",
+      "difference": "-24000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[5].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[5].opening_cash",
+      "category": "opening_cash",
+      "expected": "48454.20",
+      "submitted": "0.00",
+      "difference": "-48454.20"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[5].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "-39945.80",
+      "submitted": "0.00",
+      "difference": "39945.80"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[5].closing_cash",
+      "category": "closing_cash",
+      "expected": "-39945.80",
+      "submitted": "0.00",
+      "difference": "39945.80"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[5].opening_principal",
+      "category": "opening_principal",
+      "expected": "200000.00",
+      "submitted": "0.00",
+      "difference": "-200000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[5].interest_paid",
+      "category": "interest_paid",
+      "expected": "400.00",
+      "submitted": "0.00",
+      "difference": "-400.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[5].closing_principal",
+      "category": "closing_principal",
+      "expected": "200000.00",
+      "submitted": "0.00",
+      "difference": "-200000.00"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[5].minimum_cash_shortfall",
+      "category": "minimum_cash_shortfall",
+      "expected": "89945.80",
+      "submitted": "0.00",
+      "difference": "-89945.80"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[5].unfunded_cash_deficit",
+      "category": "unfunded_cash_deficit",
+      "expected": "39945.80",
+      "submitted": "0.00",
+      "difference": "-39945.80"
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[5].minimum_cash_breached",
+      "category": "minimum_cash_breached",
+      "expected": true,
+      "submitted": false
+    },
+    {
+      "group": "liquidity",
+      "path": "weeks[5].unfunded_deficit",
+      "category": "unfunded_deficit",
+      "expected": true,
+      "submitted": false
+    },
+    {
+      "group": "operating",
+      "path": "weeks[6].receipts",
+      "category": "receipts",
+      "expected": "180000.00",
+      "submitted": "0.00",
+      "difference": "-180000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[6].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "35000.00",
+      "submitted": "0.00",
+      "difference": "-35000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[6].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[6].opening_cash",
+      "category": "opening_cash",
+      "expected": "-39945.80",
+      "submitted": "0.00",
+      "difference": "39945.80"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[6].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "102654.20",
+      "submitted": "0.00",
+      "difference": "-102654.20"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[6].closing_cash",
+      "category": "closing_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[6].opening_principal",
+      "category": "opening_principal",
+      "expected": "200000.00",
+      "submitted": "0.00",
+      "difference": "-200000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[6].interest_paid",
+      "category": "interest_paid",
+      "expected": "400.00",
+      "submitted": "0.00",
+      "difference": "-400.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[6].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "52654.20",
+      "submitted": "0.00",
+      "difference": "-52654.20"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[6].closing_principal",
+      "category": "closing_principal",
+      "expected": "147345.80",
+      "submitted": "0.00",
+      "difference": "-147345.80"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[6].credit_available",
+      "category": "credit_available",
+      "expected": "52654.20",
+      "submitted": "0.00",
+      "difference": "-52654.20"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[7].receipts",
+      "category": "receipts",
+      "expected": "160000.00",
+      "submitted": "0.00",
+      "difference": "-160000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[7].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "40000.00",
+      "submitted": "0.00",
+      "difference": "-40000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[7].payroll_payments",
+      "category": "payroll_payments",
+      "expected": "24000.00",
+      "submitted": "0.00",
+      "difference": "-24000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[7].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[7].opening_cash",
+      "category": "opening_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[7].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "143705.31",
+      "submitted": "0.00",
+      "difference": "-143705.31"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[7].closing_cash",
+      "category": "closing_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].opening_principal",
+      "category": "opening_principal",
+      "expected": "147345.80",
+      "submitted": "0.00",
+      "difference": "-147345.80"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].interest_paid",
+      "category": "interest_paid",
+      "expected": "294.69",
+      "submitted": "0.00",
+      "difference": "-294.69"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "93705.31",
+      "submitted": "0.00",
+      "difference": "-93705.31"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].closing_principal",
+      "category": "closing_principal",
+      "expected": "53640.49",
+      "submitted": "0.00",
+      "difference": "-53640.49"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[7].credit_available",
+      "category": "credit_available",
+      "expected": "146359.51",
+      "submitted": "0.00",
+      "difference": "-146359.51"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[8].receipts",
+      "category": "receipts",
+      "expected": "90000.00",
+      "submitted": "0.00",
+      "difference": "-90000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[8].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "45000.00",
+      "submitted": "0.00",
+      "difference": "-45000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[8].tax_payments",
+      "category": "tax_payments",
+      "expected": "12000.00",
+      "submitted": "0.00",
+      "difference": "-12000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[8].rent_payments",
+      "category": "rent_payments",
+      "expected": "8000.00",
+      "submitted": "0.00",
+      "difference": "-8000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[8].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[8].opening_cash",
+      "category": "opening_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[8].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "72892.72",
+      "submitted": "0.00",
+      "difference": "-72892.72"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[8].closing_cash",
+      "category": "closing_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].opening_principal",
+      "category": "opening_principal",
+      "expected": "53640.49",
+      "submitted": "0.00",
+      "difference": "-53640.49"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].interest_paid",
+      "category": "interest_paid",
+      "expected": "107.28",
+      "submitted": "0.00",
+      "difference": "-107.28"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "22892.72",
+      "submitted": "0.00",
+      "difference": "-22892.72"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].closing_principal",
+      "category": "closing_principal",
+      "expected": "30747.77",
+      "submitted": "0.00",
+      "difference": "-30747.77"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[8].credit_available",
+      "category": "credit_available",
+      "expected": "169252.23",
+      "submitted": "0.00",
+      "difference": "-169252.23"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[9].receipts",
+      "category": "receipts",
+      "expected": "80000.00",
+      "submitted": "0.00",
+      "difference": "-80000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[9].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[9].payroll_payments",
+      "category": "payroll_payments",
+      "expected": "24000.00",
+      "submitted": "0.00",
+      "difference": "-24000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[9].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[9].opening_cash",
+      "category": "opening_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[9].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "53938.50",
+      "submitted": "0.00",
+      "difference": "-53938.50"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[9].closing_cash",
+      "category": "closing_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].opening_principal",
+      "category": "opening_principal",
+      "expected": "30747.77",
+      "submitted": "0.00",
+      "difference": "-30747.77"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].interest_paid",
+      "category": "interest_paid",
+      "expected": "61.50",
+      "submitted": "0.00",
+      "difference": "-61.50"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "3938.50",
+      "submitted": "0.00",
+      "difference": "-3938.50"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].closing_principal",
+      "category": "closing_principal",
+      "expected": "26809.27",
+      "submitted": "0.00",
+      "difference": "-26809.27"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[9].credit_available",
+      "category": "credit_available",
+      "expected": "173190.73",
+      "submitted": "0.00",
+      "difference": "-173190.73"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[10].receipts",
+      "category": "receipts",
+      "expected": "75000.00",
+      "submitted": "0.00",
+      "difference": "-75000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[10].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "40000.00",
+      "submitted": "0.00",
+      "difference": "-40000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[10].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[10].opening_cash",
+      "category": "opening_cash",
+      "expected": "50000.00",
+      "submitted": "0.00",
+      "difference": "-50000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[10].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "82946.38",
+      "submitted": "0.00",
+      "difference": "-82946.38"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[10].closing_cash",
+      "category": "closing_cash",
+      "expected": "56137.11",
+      "submitted": "0.00",
+      "difference": "-56137.11"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].opening_principal",
+      "category": "opening_principal",
+      "expected": "26809.27",
+      "submitted": "0.00",
+      "difference": "-26809.27"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].interest_paid",
+      "category": "interest_paid",
+      "expected": "53.62",
+      "submitted": "0.00",
+      "difference": "-53.62"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].principal_repayment",
+      "category": "principal_repayment",
+      "expected": "26809.27",
+      "submitted": "0.00",
+      "difference": "-26809.27"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[10].credit_available",
+      "category": "credit_available",
+      "expected": "200000.00",
+      "submitted": "0.00",
+      "difference": "-200000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[11].receipts",
+      "category": "receipts",
+      "expected": "100000.00",
+      "submitted": "0.00",
+      "difference": "-100000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[11].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "45000.00",
+      "submitted": "0.00",
+      "difference": "-45000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[11].tax_payments",
+      "category": "tax_payments",
+      "expected": "12000.00",
+      "submitted": "0.00",
+      "difference": "-12000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[11].payroll_payments",
+      "category": "payroll_payments",
+      "expected": "24000.00",
+      "submitted": "0.00",
+      "difference": "-24000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[11].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[11].opening_cash",
+      "category": "opening_cash",
+      "expected": "56137.11",
+      "submitted": "0.00",
+      "difference": "-56137.11"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[11].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "73137.11",
+      "submitted": "0.00",
+      "difference": "-73137.11"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[11].closing_cash",
+      "category": "closing_cash",
+      "expected": "73137.11",
+      "submitted": "0.00",
+      "difference": "-73137.11"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[11].credit_available",
+      "category": "credit_available",
+      "expected": "200000.00",
+      "submitted": "0.00",
+      "difference": "-200000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[12].receipts",
+      "category": "receipts",
+      "expected": "95000.00",
+      "submitted": "0.00",
+      "difference": "-95000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[12].supplier_payments",
+      "category": "supplier_payments",
+      "expected": "40000.00",
+      "submitted": "0.00",
+      "difference": "-40000.00"
+    },
+    {
+      "group": "operating",
+      "path": "weeks[12].other_recurring_payments",
+      "category": "other_recurring_payments",
+      "expected": "2000.00",
+      "submitted": "0.00",
+      "difference": "-2000.00"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[12].opening_cash",
+      "category": "opening_cash",
+      "expected": "73137.11",
+      "submitted": "0.00",
+      "difference": "-73137.11"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[12].cash_before_financing",
+      "category": "cash_before_financing",
+      "expected": "126137.11",
+      "submitted": "0.00",
+      "difference": "-126137.11"
+    },
+    {
+      "group": "cash",
+      "path": "weeks[12].closing_cash",
+      "category": "closing_cash",
+      "expected": "126137.11",
+      "submitted": "0.00",
+      "difference": "-126137.11"
+    },
+    {
+      "group": "financing",
+      "path": "weeks[12].credit_available",
+      "category": "credit_available",
+      "expected": "200000.00",
+      "submitted": "0.00",
+      "difference": "-200000.00"
+    }
+  ],
+  "schema_errors": [],
+  "artifact_errors": [],
+  "explanation": {
+    "status": "explanation_review_pending"
+  },
+  "forecast_sha256": "5488f2205bccfb697193e126e7289d3028b1945c18adc538f6078388e3a44b95",
+  "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+  "analysis_word_count": 468,
+  "human_review_template": {
+    "grader_version": "0.1.0",
+    "forecast_sha256": "5488f2205bccfb697193e126e7289d3028b1945c18adc538f6078388e3a44b95",
+    "analysis_sha256": "4f7a5ae843853fb89127e6664dd11a1df21e978bf9a80b834739fd8c7c80f060",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

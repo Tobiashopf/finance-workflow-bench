@@ -1,0 +1,9 @@
+{
+  "case_id": "borrowing_base_002",
+  "reviewer": "Tobias Hopf",
+  "scope": "Detailed case reference and review material",
+  "confirmation": "User stated: Conferi tudo já. Segue os outputs do outro chat",
+  "reference_sha256": "5866698763960143cf69fca6190bded4ea50556db697aaea8d1a6c4fea723189",
+  "status": "project_owner_review_confirmed",
+  "note": "Records owner confirmation, not an external audit or approval of the new model submission's explanation. Earlier computational reports predate this confirmation."
+}

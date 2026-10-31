@@ -1,0 +1,30 @@
+{
+  "kind": "pipeline_smoke_test",
+  "status": "passed",
+  "model_called": false,
+  "package_file_count": 8,
+  "package_sha256": "c0304e03b88e1a8a7cf3541afe40db3da5fac7db348e264b7e37cc5f1e14ab5b",
+  "result": {
+    "kind": "pipeline_smoke_test",
+    "case_id": "cash_forecast_001",
+    "package_sha256": "c0304e03b88e1a8a7cf3541afe40db3da5fac7db348e264b7e37cc5f1e14ab5b",
+    "imported_at_utc": "2026-10-30T20:17:06.295473+00:00",
+    "metadata_origin": "operator_reported_not_independently_verified",
+    "elapsed_seconds_operator_reported": null,
+    "execution_sha256": "60166c2619a2b1b91f927d2bc6d628d8051bc47cf141180b93421437e8ff94e5",
+    "artifact_sha256": {
+      "forecast.json": "e0a1fa9abc309713b1cf15c55886d4a11165b7b9f281ae5c05eb67c5772e8747",
+      "analysis.md": "d262acecd4d031b58aac30eeae30ab78abd5953c372ff6828a56f33ff0fe6a34"
+    },
+    "outcome": "completed",
+    "model_grade": {
+      "status": "explanation_review_pending",
+      "numerical_score": 100.0,
+      "numerical_passed": true,
+      "overall_passed": false
+    },
+    "transcript_available": false,
+    "isolation": "external_environment_not_verified"
+  },
+  "limitation": "Known reference fixture; this is not an AI capability evaluation or OS isolation test"
+}
