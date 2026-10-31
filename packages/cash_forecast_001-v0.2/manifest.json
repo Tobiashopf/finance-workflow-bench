@@ -1,0 +1,16 @@
+{
+  "format_version": 1,
+  "case_id": "cash_forecast_001",
+  "package_sha256": "c0304e03b88e1a8a7cf3541afe40db3da5fac7db348e264b7e37cc5f1e14ab5b",
+  "files": {
+    "agent_instructions.md": "2f5f0414a9e7fcd75ef32829449c7b34912a94f3ea65640ec374f787a0ddd82d",
+    "forecast.schema.json": "4be169e850e3b8787b85e8edbf6c92eab63f2ddd30c0501bcc3dad9b1155ce87",
+    "inputs/credit_facility.json": "44768bea8174ee70b84ed4e3b913503f26105ce716b692da55dfac793f4c4549",
+    "inputs/opening_balances.csv": "0777cfb12a2ca33026228554082bd55cacbf66cd5c46df37a920bb6ca9ded131",
+    "inputs/payables.csv": "702929cccba24138ccde15ef261d5d63aef2ebba858d4e15a170b13ebda54825",
+    "inputs/receivables.csv": "39a2a5d6218a88de29bd959b24fca1f27255315624b754e71d595f00814ce955",
+    "inputs/recurring_expenses.csv": "5da22a342c239177d55a83bf437303c6f3811ecd9789c94e2965d112db2f5150",
+    "task.md": "a9f6244680e1c9bdd0aa89653168e2f4c794626af8f459bbb35701e09e1ba299"
+  },
+  "isolation": "content_allowlist_only_not_process_isolation"
+}

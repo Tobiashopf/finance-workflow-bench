@@ -1,0 +1,15 @@
+{
+  "case_id": "bb_rounding_003",
+  "version": "1.0",
+  "package_sha256": "97c50a8eea6e6d3bdbf839173450de49f248e88c247f983b884f9c888eec316d",
+  "files": {
+    "agent_instructions.md": "70e737a29d7826f3efde5f2352c43747152cebe7322ad972950bfce6051670af",
+    "forecast.schema.json": "1c35bbed37af7ce8ddba6beb1419f6e8e9a566952ee8777486df33a72bf8e3de",
+    "inputs/cash_events.csv": "4baa5179a850cbc39027e2f279bfd2db410008db64e6ad45fcb70f922d23e77b",
+    "inputs/facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+    "inputs/opening_position.json": "e4d4782b9eab4347f4cd27affac700eaab35a563b078955fe3243ea67211e6c8",
+    "inputs/receivables_snapshots.csv": "c801d367e28e05571d656caf8c358c2fa0f685ed99e24e32bbe1a4f332c93091",
+    "inputs/snapshot_dates.csv": "528e8a957a3c5d4240653d82fee99440482803c11761fb2f3134d7fbccc4cf9f",
+    "task.md": "2dfcdd8a35fe1c0592069dd2059a36dc59ce97190989c4cceb6a407382909c93"
+  }
+}

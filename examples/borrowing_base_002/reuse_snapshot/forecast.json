@@ -1,0 +1,575 @@
+{
+  "case_id": "borrowing_base_002",
+  "currency": "USD",
+  "weeks": [
+    {
+      "week": 1,
+      "snapshot_date": "2027-01-10",
+      "eligible": "300000.00",
+      "concentration_threshold": "75000.00",
+      "recognized": "210000.00",
+      "borrowing_base": "168000.00",
+      "effective_limit": "168000.00",
+      "opening_cash": "60000.00",
+      "opening_debt": "150000.00",
+      "receipts": "20000.00",
+      "payments": "30000.00",
+      "interest": "300.00",
+      "cash_before_financing": "49700.00",
+      "required_cure": "0.00",
+      "actual_cure": "0.00",
+      "unpaid_cure": "0.00",
+      "draw": "300.00",
+      "voluntary_repayment": "0.00",
+      "closing_cash": "50000.00",
+      "closing_debt": "150300.00",
+      "unused_credit": "17700.00",
+      "overadvance": "0.00",
+      "buffer_shortfall": "0.00",
+      "cash_deficit": "0.00",
+      "overadvance_present": false,
+      "buffer_breached": false,
+      "unfunded_deficit": false
+    },
+    {
+      "week": 2,
+      "snapshot_date": "2027-01-17",
+      "eligible": "200000.00",
+      "concentration_threshold": "50000.00",
+      "recognized": "130000.00",
+      "borrowing_base": "104000.00",
+      "effective_limit": "104000.00",
+      "opening_cash": "50000.00",
+      "opening_debt": "150300.00",
+      "receipts": "30000.00",
+      "payments": "40000.00",
+      "interest": "300.60",
+      "cash_before_financing": "39699.40",
+      "required_cure": "46300.00",
+      "actual_cure": "39699.40",
+      "unpaid_cure": "6600.60",
+      "draw": "0.00",
+      "voluntary_repayment": "0.00",
+      "closing_cash": "0.00",
+      "closing_debt": "110600.60",
+      "unused_credit": "0.00",
+      "overadvance": "6600.60",
+      "buffer_shortfall": "50000.00",
+      "cash_deficit": "0.00",
+      "overadvance_present": true,
+      "buffer_breached": true,
+      "unfunded_deficit": false
+    },
+    {
+      "week": 3,
+      "snapshot_date": "2027-01-24",
+      "eligible": "400000.00",
+      "concentration_threshold": "100000.00",
+      "recognized": "380000.00",
+      "borrowing_base": "304000.00",
+      "effective_limit": "200000.00",
+      "opening_cash": "0.00",
+      "opening_debt": "110600.60",
+      "receipts": "80000.00",
+      "payments": "20000.00",
+      "interest": "221.20",
+      "cash_before_financing": "59778.80",
+      "required_cure": "0.00",
+      "actual_cure": "0.00",
+      "unpaid_cure": "0.00",
+      "draw": "0.00",
+      "voluntary_repayment": "9778.80",
+      "closing_cash": "50000.00",
+      "closing_debt": "100821.80",
+      "unused_credit": "99178.20",
+      "overadvance": "0.00",
+      "buffer_shortfall": "0.00",
+      "cash_deficit": "0.00",
+      "overadvance_present": false,
+      "buffer_breached": false,
+      "unfunded_deficit": false
+    },
+    {
+      "week": 4,
+      "snapshot_date": "2027-01-31",
+      "eligible": "0.00",
+      "concentration_threshold": "0.00",
+      "recognized": "0.00",
+      "borrowing_base": "0.00",
+      "effective_limit": "200000.00",
+      "opening_cash": "50000.00",
+      "opening_debt": "100821.80",
+      "receipts": "20000.00",
+      "payments": "90000.00",
+      "interest": "201.64",
+      "cash_before_financing": "-20201.64",
+      "required_cure": "100821.80",
+      "actual_cure": "0.00",
+      "unpaid_cure": "100821.80",
+      "draw": "0.00",
+      "voluntary_repayment": "0.00",
+      "closing_cash": "-20201.64",
+      "closing_debt": "100821.80",
+      "unused_credit": "0.00",
+      "overadvance": "100821.80",
+      "buffer_shortfall": "70201.64",
+      "cash_deficit": "20201.64",
+      "overadvance_present": true,
+      "buffer_breached": true,
+      "unfunded_deficit": true
+    }
+  ],
+  "invoice_checks": [
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "A-CORE",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.00",
+      "eligible_amount": "100000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "A-EDGE",
+      "customer_id": "A",
+      "days_past_due": 60,
+      "outstanding_amount": "50000.00",
+      "eligible_amount": "50000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "B-CORE",
+      "customer_id": "B",
+      "days_past_due": 0,
+      "outstanding_amount": "90000.00",
+      "eligible_amount": "90000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "C-CORE",
+      "customer_id": "C",
+      "days_past_due": 0,
+      "outstanding_amount": "60000.00",
+      "eligible_amount": "60000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "X-DISPUTE",
+      "customer_id": "X",
+      "days_past_due": 0,
+      "outstanding_amount": "90000.00",
+      "eligible_amount": "0.00",
+      "reason": "disputed"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "X-MULTI",
+      "customer_id": "X",
+      "days_past_due": 101,
+      "outstanding_amount": "12000.00",
+      "eligible_amount": "0.00",
+      "reason": "disputed"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "Y-MULTI",
+      "customer_id": "Y",
+      "days_past_due": 101,
+      "outstanding_amount": "0.00",
+      "eligible_amount": "0.00",
+      "reason": "related_party"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "Y-RELATED",
+      "customer_id": "Y",
+      "days_past_due": 0,
+      "outstanding_amount": "70000.00",
+      "eligible_amount": "0.00",
+      "reason": "related_party"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "Z-OLD",
+      "customer_id": "Z",
+      "days_past_due": 61,
+      "outstanding_amount": "40000.00",
+      "eligible_amount": "0.00",
+      "reason": "over_60_days"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "Z-ZERO",
+      "customer_id": "Z",
+      "days_past_due": 0,
+      "outstanding_amount": "0.00",
+      "eligible_amount": "0.00",
+      "reason": "zero_balance"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "A-CORE",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.00",
+      "eligible_amount": "100000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "A-EDGE",
+      "customer_id": "A",
+      "days_past_due": 67,
+      "outstanding_amount": "50000.00",
+      "eligible_amount": "0.00",
+      "reason": "over_60_days"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "A-NEW",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "20000.00",
+      "eligible_amount": "20000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "B-CORE",
+      "customer_id": "B",
+      "days_past_due": 0,
+      "outstanding_amount": "40000.00",
+      "eligible_amount": "40000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "C-CORE",
+      "customer_id": "C",
+      "days_past_due": 0,
+      "outstanding_amount": "40000.00",
+      "eligible_amount": "40000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "X-DISPUTE",
+      "customer_id": "X",
+      "days_past_due": 0,
+      "outstanding_amount": "90000.00",
+      "eligible_amount": "0.00",
+      "reason": "disputed"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "X-MULTI",
+      "customer_id": "X",
+      "days_past_due": 108,
+      "outstanding_amount": "12000.00",
+      "eligible_amount": "0.00",
+      "reason": "disputed"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "Y-MULTI",
+      "customer_id": "Y",
+      "days_past_due": 108,
+      "outstanding_amount": "0.00",
+      "eligible_amount": "0.00",
+      "reason": "related_party"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "Y-RELATED",
+      "customer_id": "Y",
+      "days_past_due": 0,
+      "outstanding_amount": "70000.00",
+      "eligible_amount": "0.00",
+      "reason": "related_party"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "Z-OLD",
+      "customer_id": "Z",
+      "days_past_due": 68,
+      "outstanding_amount": "40000.00",
+      "eligible_amount": "0.00",
+      "reason": "over_60_days"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "Z-ZERO",
+      "customer_id": "Z",
+      "days_past_due": 0,
+      "outstanding_amount": "0.00",
+      "eligible_amount": "0.00",
+      "reason": "zero_balance"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "A-CORE",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.00",
+      "eligible_amount": "100000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "A-EDGE",
+      "customer_id": "A",
+      "days_past_due": 74,
+      "outstanding_amount": "50000.00",
+      "eligible_amount": "0.00",
+      "reason": "over_60_days"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "A-NEW",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "20000.00",
+      "eligible_amount": "20000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "B-CORE",
+      "customer_id": "B",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.00",
+      "eligible_amount": "100000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "C-CORE",
+      "customer_id": "C",
+      "days_past_due": 4,
+      "outstanding_amount": "100000.00",
+      "eligible_amount": "100000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "D-NEW",
+      "customer_id": "D",
+      "days_past_due": 0,
+      "outstanding_amount": "80000.00",
+      "eligible_amount": "80000.00",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "X-DISPUTE",
+      "customer_id": "X",
+      "days_past_due": 0,
+      "outstanding_amount": "90000.00",
+      "eligible_amount": "0.00",
+      "reason": "disputed"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "X-MULTI",
+      "customer_id": "X",
+      "days_past_due": 115,
+      "outstanding_amount": "12000.00",
+      "eligible_amount": "0.00",
+      "reason": "disputed"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "Y-MULTI",
+      "customer_id": "Y",
+      "days_past_due": 115,
+      "outstanding_amount": "0.00",
+      "eligible_amount": "0.00",
+      "reason": "related_party"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "Y-RELATED",
+      "customer_id": "Y",
+      "days_past_due": 0,
+      "outstanding_amount": "70000.00",
+      "eligible_amount": "0.00",
+      "reason": "related_party"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "Z-OLD",
+      "customer_id": "Z",
+      "days_past_due": 75,
+      "outstanding_amount": "40000.00",
+      "eligible_amount": "0.00",
+      "reason": "over_60_days"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "Z-ZERO",
+      "customer_id": "Z",
+      "days_past_due": 0,
+      "outstanding_amount": "0.00",
+      "eligible_amount": "0.00",
+      "reason": "zero_balance"
+    }
+  ],
+  "customer_checks": [
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "A",
+      "eligible_amount": "150000.00",
+      "concentration_threshold": "75000.00",
+      "recognized_amount": "75000.00",
+      "concentration_deduction": "75000.00"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "B",
+      "eligible_amount": "90000.00",
+      "concentration_threshold": "75000.00",
+      "recognized_amount": "75000.00",
+      "concentration_deduction": "15000.00"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "C",
+      "eligible_amount": "60000.00",
+      "concentration_threshold": "75000.00",
+      "recognized_amount": "60000.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "X",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "75000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "Y",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "75000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "Z",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "75000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "A",
+      "eligible_amount": "120000.00",
+      "concentration_threshold": "50000.00",
+      "recognized_amount": "50000.00",
+      "concentration_deduction": "70000.00"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "B",
+      "eligible_amount": "40000.00",
+      "concentration_threshold": "50000.00",
+      "recognized_amount": "40000.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "C",
+      "eligible_amount": "40000.00",
+      "concentration_threshold": "50000.00",
+      "recognized_amount": "40000.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "X",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "50000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "Y",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "50000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "Z",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "50000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "A",
+      "eligible_amount": "120000.00",
+      "concentration_threshold": "100000.00",
+      "recognized_amount": "100000.00",
+      "concentration_deduction": "20000.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "B",
+      "eligible_amount": "100000.00",
+      "concentration_threshold": "100000.00",
+      "recognized_amount": "100000.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "C",
+      "eligible_amount": "100000.00",
+      "concentration_threshold": "100000.00",
+      "recognized_amount": "100000.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "D",
+      "eligible_amount": "80000.00",
+      "concentration_threshold": "100000.00",
+      "recognized_amount": "80000.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "X",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "100000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "Y",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "100000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "Z",
+      "eligible_amount": "0.00",
+      "concentration_threshold": "100000.00",
+      "recognized_amount": "0.00",
+      "concentration_deduction": "0.00"
+    }
+  ]
+}

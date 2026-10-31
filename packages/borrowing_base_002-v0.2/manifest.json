@@ -1,0 +1,15 @@
+{
+  "case_id": "borrowing_base_002",
+  "package_sha256": "b9df96700f6ad3983d2f6fb3c0609cd996e711a5f70b0cc02b8a43e04dca9843",
+  "files": {
+    "agent_instructions.md": "09757c29cd10a152411847e9da38a01d0143d9ce2898357d76274dd60a1eec64",
+    "forecast.schema.json": "2816f701daffeec188ffbfb2ccb840f30986cf0865f8ad72f16e7b362abe713b",
+    "inputs/cash_events.csv": "d729f70ae47087a57ef2dc677d4fb7605a5142abab56394e3d8036cf11f0d884",
+    "inputs/facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+    "inputs/opening_position.json": "fafa407aaf4640912908074fb05f78bb33587d459a77b91869e5ba6b91407b5a",
+    "inputs/receivables_snapshots.csv": "b646c67d2de63fc7c5131b40087b57cadd84bd08c6f62f8f8b50ee300e13bba8",
+    "inputs/snapshot_dates.csv": "0149db3354a9e7f1b983cee162b0b8ab35929ebe4e77c612deba6518e7f49af6",
+    "task.md": "b14cd36d2b8d6ad0bb57bec4f4abced2f8b8f6b21cbec25720e8e33a823f38e3"
+  },
+  "note": "Eight allowlisted files; no reference, tests or grader. Content separation, not process isolation."
+}

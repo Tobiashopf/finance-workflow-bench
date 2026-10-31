@@ -1,0 +1,15 @@
+{
+  "case_id": "bb_release_006",
+  "version": "1.0",
+  "package_sha256": "62d52d3ccafeb49d5008e9d79fae89c364375850ce5f83b195c24fcf117a648a",
+  "files": {
+    "agent_instructions.md": "fdf923cc79926ed97b9f4762d155353e141034f4f4737b7b712e4623411ff9f4",
+    "forecast.schema.json": "2eb0ccfa403d418cd5e70f6bd397cf47c9ac4d10b0eea0d42f0aeacba51cec0d",
+    "inputs/cash_events.csv": "29fc666b6f4d52966b943907ec21dbfdcad82b8cc86bb040a83444e22a361bf4",
+    "inputs/facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+    "inputs/opening_position.json": "a20ac237e76aa8d4a057e27b333c4d1f90cb14632727615e0fa654c7985b471b",
+    "inputs/receivables_snapshots.csv": "a89ad60f8d0e41ce66103b4975a8e4c13c9df96c57000db1020e3549c0a0dc36",
+    "inputs/snapshot_dates.csv": "528e8a957a3c5d4240653d82fee99440482803c11761fb2f3134d7fbccc4cf9f",
+    "task.md": "01dfc852f5bfd154c930740a25c98b52092c9b56c5676e3ef3479a2b20fd6cb5"
+  }
+}

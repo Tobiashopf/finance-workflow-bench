@@ -1,0 +1,15 @@
+{
+  "case_id": "bb_cure_005",
+  "version": "1.0",
+  "package_sha256": "979a8223f4c9b5d20321370bcf01d4db8a2fd70216a346391ba3d0d67b1fcd8c",
+  "files": {
+    "agent_instructions.md": "74d2aad7e1e3689bfa2067aa6e0f8e3d6d85d82d45261ce8aca5522dc23eec68",
+    "forecast.schema.json": "fcd4e8bb1c4704d47394be53ada9808cc1c3f511fc6fd077e09a6778a7588080",
+    "inputs/cash_events.csv": "0c77e9d396a2e38f1f7e8761ce24ab545ff137af2d2e843205253de70c9c77c7",
+    "inputs/facility.json": "5b4d39bd29689c12047bbcd0f2ecea1de1a9cc6aff1b8ecfaa62185a95a8c915",
+    "inputs/opening_position.json": "a20ac237e76aa8d4a057e27b333c4d1f90cb14632727615e0fa654c7985b471b",
+    "inputs/receivables_snapshots.csv": "c6f3387b1a6be8142a1d9060a4efb39726f5f4698c8f86fd9e23f8bde6f67f02",
+    "inputs/snapshot_dates.csv": "528e8a957a3c5d4240653d82fee99440482803c11761fb2f3134d7fbccc4cf9f",
+    "task.md": "71f9dd4c86508c90fc78e5448f3a23ea316bd8f4ff09e560b63f0964a11b24e5"
+  }
+}
