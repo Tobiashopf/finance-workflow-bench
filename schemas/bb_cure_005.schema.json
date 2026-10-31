@@ -1,0 +1,283 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "bb_cure_005",
+  "type": "object",
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "const": "bb_cure_005"
+    },
+    "currency": {
+      "type": "string",
+      "const": "USD"
+    },
+    "weeks": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "properties": {
+          "week": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "snapshot_date": {
+            "type": "string",
+            "enum": [
+              "2027-01-10",
+              "2027-01-17",
+              "2027-01-24",
+              "2027-01-31"
+            ]
+          },
+          "eligible": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "concentration_threshold": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "recognized": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "borrowing_base": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "effective_limit": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "opening_cash": {
+            "type": "string",
+            "pattern": "^-?[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "opening_debt": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "receipts": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "payments": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "interest": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "cash_before_financing": {
+            "type": "string",
+            "pattern": "^-?[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "required_cure": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "actual_cure": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "draw": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "voluntary_repayment": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "closing_cash": {
+            "type": "string",
+            "pattern": "^-?[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "closing_debt": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "unused_credit": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "unpaid_cure": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "overadvance": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "buffer_shortfall": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "cash_deficit": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "overadvance_present": {
+            "type": "boolean"
+          },
+          "buffer_breached": {
+            "type": "boolean"
+          },
+          "unfunded_deficit": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "week",
+          "snapshot_date",
+          "eligible",
+          "concentration_threshold",
+          "recognized",
+          "borrowing_base",
+          "effective_limit",
+          "opening_cash",
+          "opening_debt",
+          "receipts",
+          "payments",
+          "interest",
+          "cash_before_financing",
+          "required_cure",
+          "actual_cure",
+          "draw",
+          "voluntary_repayment",
+          "closing_cash",
+          "closing_debt",
+          "unused_credit",
+          "unpaid_cure",
+          "overadvance",
+          "buffer_shortfall",
+          "cash_deficit",
+          "overadvance_present",
+          "buffer_breached",
+          "unfunded_deficit"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "invoice_checks": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "properties": {
+          "snapshot_date": {
+            "type": "string",
+            "enum": [
+              "2027-01-10",
+              "2027-01-17",
+              "2027-01-24",
+              "2027-01-31"
+            ]
+          },
+          "invoice_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "customer_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "days_past_due": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4000000
+          },
+          "outstanding_amount": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "eligible_amount": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "reason": {
+            "type": "string",
+            "enum": [
+              "eligible",
+              "disputed",
+              "related_party",
+              "over_60_days",
+              "zero_balance"
+            ]
+          }
+        },
+        "required": [
+          "snapshot_date",
+          "invoice_id",
+          "customer_id",
+          "days_past_due",
+          "outstanding_amount",
+          "eligible_amount",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "customer_checks": {
+      "type": "array",
+      "maxItems": 1000,
+      "items": {
+        "type": "object",
+        "properties": {
+          "snapshot_date": {
+            "type": "string",
+            "enum": [
+              "2027-01-10",
+              "2027-01-17",
+              "2027-01-24",
+              "2027-01-31"
+            ]
+          },
+          "customer_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "eligible_amount": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "concentration_threshold": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "recognized_amount": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          },
+          "concentration_deduction": {
+            "type": "string",
+            "pattern": "^[0-9]{1,16}\\.[0-9]{2}$"
+          }
+        },
+        "required": [
+          "snapshot_date",
+          "customer_id",
+          "eligible_amount",
+          "concentration_threshold",
+          "recognized_amount",
+          "concentration_deduction"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "case_id",
+    "currency",
+    "weeks",
+    "invoice_checks",
+    "customer_checks"
+  ],
+  "additionalProperties": false
+}

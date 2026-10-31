@@ -1,0 +1,10 @@
+{
+  "currency": "USD",
+  "credit_limit": "200000.00",
+  "opening_principal": "60000.00",
+  "weekly_interest_rate": "0.002000",
+  "minimum_cash": "50000.00",
+  "interest_basis": "opening_week_principal",
+  "interest_payment": "end_of_each_week",
+  "fees": "0.00"
+}

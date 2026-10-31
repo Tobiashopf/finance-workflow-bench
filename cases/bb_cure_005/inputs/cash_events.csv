@@ -1,0 +1,9 @@
+record_id,cash_date,direction,amount,description
+bb_cure_005-W1-receipt,2027-01-10,receipt,70000.00,Scheduled operating receipt
+bb_cure_005-W1-payment,2027-01-10,payment,40000.00,Scheduled operating payment
+bb_cure_005-W2-receipt,2027-01-17,receipt,10000.00,Scheduled operating receipt
+bb_cure_005-W2-payment,2027-01-17,payment,0.00,Scheduled operating payment
+bb_cure_005-W3-receipt,2027-01-24,receipt,10000.00,Scheduled operating receipt
+bb_cure_005-W3-payment,2027-01-24,payment,20000.00,Scheduled operating payment
+bb_cure_005-W4-receipt,2027-01-31,receipt,80000.00,Scheduled operating receipt
+bb_cure_005-W4-payment,2027-01-31,payment,10000.00,Scheduled operating payment

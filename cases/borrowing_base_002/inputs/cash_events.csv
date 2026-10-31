@@ -1,0 +1,9 @@
+record_id,cash_date,direction,amount,description
+CASH-R-1,2027-01-06,receipt,20000.00,Scheduled customer collections; use this cash event independently of collateral snapshots
+CASH-P-1,2027-01-08,payment,30000.00,Required operating payments
+CASH-R-2,2027-01-13,receipt,30000.00,Scheduled customer collections; use this cash event independently of collateral snapshots
+CASH-P-2,2027-01-15,payment,40000.00,Required operating payments
+CASH-R-3,2027-01-20,receipt,80000.00,Scheduled customer collections; use this cash event independently of collateral snapshots
+CASH-P-3,2027-01-22,payment,20000.00,Required operating payments
+CASH-R-4,2027-01-27,receipt,20000.00,Scheduled customer collections; use this cash event independently of collateral snapshots
+CASH-P-4,2027-01-29,payment,90000.00,Required operating payments

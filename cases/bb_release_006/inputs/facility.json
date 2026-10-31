@@ -1,0 +1,13 @@
+{
+  "currency": "USD",
+  "contractual_ceiling": "200000.00",
+  "minimum_cash": "50000.00",
+  "weekly_interest_rate": "0.002",
+  "max_days_past_due": 60,
+  "concentration_rate": "0.25",
+  "advance_rate": "0.80",
+  "collateral_rounding": "ROUND_DOWN_to_cent",
+  "interest_rounding": "ROUND_HALF_UP_to_cent",
+  "cure_priority": "before_minimum_cash",
+  "fees": "0.00"
+}

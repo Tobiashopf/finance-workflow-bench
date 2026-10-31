@@ -1,0 +1,9 @@
+record_id,cash_date,direction,amount,description
+bb_customer_004-W1-receipt,2027-01-10,receipt,20000.00,Scheduled operating receipt
+bb_customer_004-W1-payment,2027-01-10,payment,30000.00,Scheduled operating payment
+bb_customer_004-W2-receipt,2027-01-17,receipt,10000.00,Scheduled operating receipt
+bb_customer_004-W2-payment,2027-01-17,payment,20000.00,Scheduled operating payment
+bb_customer_004-W3-receipt,2027-01-24,receipt,60000.00,Scheduled operating receipt
+bb_customer_004-W3-payment,2027-01-24,payment,10000.00,Scheduled operating payment
+bb_customer_004-W4-receipt,2027-01-31,receipt,10000.00,Scheduled operating receipt
+bb_customer_004-W4-payment,2027-01-31,payment,50000.00,Scheduled operating payment
