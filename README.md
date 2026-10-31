@@ -83,5 +83,3 @@ There are no API integrations, automated model runner, validated RL reward or ge
 Tobias Hopf selected the project direction and reviewed the financial rules and reference trajectories. Implementation, tests and documentation were developed with substantial AI assistance. The separate calculators provide computational cross-checking, not an independent human audit. Submitted explanations have preliminary AI reviews; formal human approval remains pending.
 
 All business inputs are synthetic. [Data provenance](docs/data_provenance.md) · [Owner reference review](reference/calibration-v1-review-record.json).
-
-This repository is prepared locally. No remote publication is implied by these files.
