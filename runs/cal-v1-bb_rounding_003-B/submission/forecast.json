@@ -1,0 +1,347 @@
+{
+  "case_id": "bb_rounding_003",
+  "currency": "USD",
+  "weeks": [
+    {
+      "week": 1,
+      "snapshot_date": "2027-01-10",
+      "eligible": "240000.06",
+      "concentration_threshold": "60000.01",
+      "recognized": "180000.03",
+      "borrowing_base": "144000.02",
+      "effective_limit": "144000.02",
+      "opening_cash": "60000.00",
+      "opening_debt": "150002.50",
+      "receipts": "20000.00",
+      "payments": "30000.00",
+      "interest": "300.01",
+      "cash_before_financing": "49699.99",
+      "required_cure": "6002.48",
+      "actual_cure": "6002.48",
+      "draw": "0.00",
+      "voluntary_repayment": "0.00",
+      "closing_cash": "43697.51",
+      "closing_debt": "144000.02",
+      "unused_credit": "0.00",
+      "unpaid_cure": "0.00",
+      "overadvance": "0.00",
+      "buffer_shortfall": "6302.49",
+      "cash_deficit": "0.00",
+      "overadvance_present": false,
+      "buffer_breached": true,
+      "unfunded_deficit": false
+    },
+    {
+      "week": 2,
+      "snapshot_date": "2027-01-17",
+      "eligible": "240000.12",
+      "concentration_threshold": "60000.03",
+      "recognized": "180000.08",
+      "borrowing_base": "144000.06",
+      "effective_limit": "144000.06",
+      "opening_cash": "43697.51",
+      "opening_debt": "144000.02",
+      "receipts": "10000.00",
+      "payments": "20000.00",
+      "interest": "288.00",
+      "cash_before_financing": "33409.51",
+      "required_cure": "0.00",
+      "actual_cure": "0.00",
+      "draw": "0.04",
+      "voluntary_repayment": "0.00",
+      "closing_cash": "33409.55",
+      "closing_debt": "144000.06",
+      "unused_credit": "0.00",
+      "unpaid_cure": "0.00",
+      "overadvance": "0.00",
+      "buffer_shortfall": "16590.45",
+      "cash_deficit": "0.00",
+      "overadvance_present": false,
+      "buffer_breached": true,
+      "unfunded_deficit": false
+    },
+    {
+      "week": 3,
+      "snapshot_date": "2027-01-24",
+      "eligible": "400000.10",
+      "concentration_threshold": "100000.02",
+      "recognized": "400000.07",
+      "borrowing_base": "320000.05",
+      "effective_limit": "200000.00",
+      "opening_cash": "33409.55",
+      "opening_debt": "144000.06",
+      "receipts": "60000.00",
+      "payments": "10000.00",
+      "interest": "288.00",
+      "cash_before_financing": "83121.55",
+      "required_cure": "0.00",
+      "actual_cure": "0.00",
+      "draw": "0.00",
+      "voluntary_repayment": "33121.55",
+      "closing_cash": "50000.00",
+      "closing_debt": "110878.51",
+      "unused_credit": "89121.49",
+      "unpaid_cure": "0.00",
+      "overadvance": "0.00",
+      "buffer_shortfall": "0.00",
+      "cash_deficit": "0.00",
+      "overadvance_present": false,
+      "buffer_breached": false,
+      "unfunded_deficit": false
+    },
+    {
+      "week": 4,
+      "snapshot_date": "2027-01-31",
+      "eligible": "210000.06",
+      "concentration_threshold": "52500.01",
+      "recognized": "155000.05",
+      "borrowing_base": "124000.04",
+      "effective_limit": "124000.04",
+      "opening_cash": "50000.00",
+      "opening_debt": "110878.51",
+      "receipts": "10000.00",
+      "payments": "50000.00",
+      "interest": "221.76",
+      "cash_before_financing": "9778.24",
+      "required_cure": "0.00",
+      "actual_cure": "0.00",
+      "draw": "13121.53",
+      "voluntary_repayment": "0.00",
+      "closing_cash": "22899.77",
+      "closing_debt": "124000.04",
+      "unused_credit": "0.00",
+      "unpaid_cure": "0.00",
+      "overadvance": "0.00",
+      "buffer_shortfall": "27100.23",
+      "cash_deficit": "0.00",
+      "overadvance_present": false,
+      "buffer_breached": true,
+      "unfunded_deficit": false
+    }
+  ],
+  "invoice_checks": [
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "A-1",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.03",
+      "eligible_amount": "100000.03",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "B-1",
+      "customer_id": "B",
+      "days_past_due": 0,
+      "outstanding_amount": "80000.02",
+      "eligible_amount": "80000.02",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "invoice_id": "C-1",
+      "customer_id": "C",
+      "days_past_due": 0,
+      "outstanding_amount": "60000.01",
+      "eligible_amount": "60000.01",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "A-1",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.07",
+      "eligible_amount": "100000.07",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "B-1",
+      "customer_id": "B",
+      "days_past_due": 0,
+      "outstanding_amount": "80000.03",
+      "eligible_amount": "80000.03",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "invoice_id": "C-1",
+      "customer_id": "C",
+      "days_past_due": 0,
+      "outstanding_amount": "60000.02",
+      "eligible_amount": "60000.02",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "A-1",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.01",
+      "eligible_amount": "100000.01",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "B-1",
+      "customer_id": "B",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.02",
+      "eligible_amount": "100000.02",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "C-1",
+      "customer_id": "C",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.03",
+      "eligible_amount": "100000.03",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "invoice_id": "D-1",
+      "customer_id": "D",
+      "days_past_due": 0,
+      "outstanding_amount": "100000.04",
+      "eligible_amount": "100000.04",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-31",
+      "invoice_id": "A-1",
+      "customer_id": "A",
+      "days_past_due": 0,
+      "outstanding_amount": "90000.01",
+      "eligible_amount": "90000.01",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-31",
+      "invoice_id": "B-1",
+      "customer_id": "B",
+      "days_past_due": 0,
+      "outstanding_amount": "70000.02",
+      "eligible_amount": "70000.02",
+      "reason": "eligible"
+    },
+    {
+      "snapshot_date": "2027-01-31",
+      "invoice_id": "C-1",
+      "customer_id": "C",
+      "days_past_due": 0,
+      "outstanding_amount": "50000.03",
+      "eligible_amount": "50000.03",
+      "reason": "eligible"
+    }
+  ],
+  "customer_checks": [
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "A",
+      "eligible_amount": "100000.03",
+      "concentration_threshold": "60000.01",
+      "recognized_amount": "60000.01",
+      "concentration_deduction": "40000.02"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "B",
+      "eligible_amount": "80000.02",
+      "concentration_threshold": "60000.01",
+      "recognized_amount": "60000.01",
+      "concentration_deduction": "20000.01"
+    },
+    {
+      "snapshot_date": "2027-01-10",
+      "customer_id": "C",
+      "eligible_amount": "60000.01",
+      "concentration_threshold": "60000.01",
+      "recognized_amount": "60000.01",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "A",
+      "eligible_amount": "100000.07",
+      "concentration_threshold": "60000.03",
+      "recognized_amount": "60000.03",
+      "concentration_deduction": "40000.04"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "B",
+      "eligible_amount": "80000.03",
+      "concentration_threshold": "60000.03",
+      "recognized_amount": "60000.03",
+      "concentration_deduction": "20000.00"
+    },
+    {
+      "snapshot_date": "2027-01-17",
+      "customer_id": "C",
+      "eligible_amount": "60000.02",
+      "concentration_threshold": "60000.03",
+      "recognized_amount": "60000.02",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "A",
+      "eligible_amount": "100000.01",
+      "concentration_threshold": "100000.02",
+      "recognized_amount": "100000.01",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "B",
+      "eligible_amount": "100000.02",
+      "concentration_threshold": "100000.02",
+      "recognized_amount": "100000.02",
+      "concentration_deduction": "0.00"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "C",
+      "eligible_amount": "100000.03",
+      "concentration_threshold": "100000.02",
+      "recognized_amount": "100000.02",
+      "concentration_deduction": "0.01"
+    },
+    {
+      "snapshot_date": "2027-01-24",
+      "customer_id": "D",
+      "eligible_amount": "100000.04",
+      "concentration_threshold": "100000.02",
+      "recognized_amount": "100000.02",
+      "concentration_deduction": "0.02"
+    },
+    {
+      "snapshot_date": "2027-01-31",
+      "customer_id": "A",
+      "eligible_amount": "90000.01",
+      "concentration_threshold": "52500.01",
+      "recognized_amount": "52500.01",
+      "concentration_deduction": "37500.00"
+    },
+    {
+      "snapshot_date": "2027-01-31",
+      "customer_id": "B",
+      "eligible_amount": "70000.02",
+      "concentration_threshold": "52500.01",
+      "recognized_amount": "52500.01",
+      "concentration_deduction": "17500.01"
+    },
+    {
+      "snapshot_date": "2027-01-31",
+      "customer_id": "C",
+      "eligible_amount": "50000.03",
+      "concentration_threshold": "52500.01",
+      "recognized_amount": "50000.03",
+      "concentration_deduction": "0.00"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "model_run",
+  "case_id": "bb_rounding_003",
+  "run_id": "cal-v1-bb_rounding_003-B",
+  "model_label_operator_reported": "Claude",
+  "prior_model_label_context": "Claude Code Opus 5.5; exact version not reconfirmed for this run",
+  "reasoning_mode": null,
+  "single_attempt": null,
+  "fresh_conversation": true,
+  "additional_hints": false,
+  "memory_disabled": true,
+  "browsing_used_operator_reported": false,
+  "local_tools_used": null,
+  "transcript_available": false,
+  "source_filenames": {
+    "analysis.md": "analysis4.md",
+    "forecast.json": "forecast4.json"
+  },
+  "artifact_sha256": {
+    "analysis.md": "412f0a1f5c1916ab111d3e34875a33594b6345fa69e8cfa9186c4841fe8c6e97",
+    "forecast.json": "ce08e7be4523d280735d848f2bbebe6e70e25c4da33f5420fcde0278d7d738dd"
+  },
+  "outcome": "completed_artifacts_received",
+  "metadata_origin": "User confirmed new conversations, no hints, memory disabled and no navigation tools for both runs. Attempt count, reasoning modes and local tools not separately confirmed."
+}

@@ -1,0 +1,20 @@
+{
+  "additional_intervention_reported": null,
+  "actual_model_verified": false,
+  "final_word_count_observed": 559,
+  "forecast_sha256": "f7dd58061c7982682db9d10795cf307f829d6e88fae0d09fe8f764a4ee816f67",
+  "draft_word_count_reported": null,
+  "analysis_sha256": "a4b13f9463c9b1f0e678700ffd84269f6ea410054791553159cf81e573a372ff",
+  "notes": "User-supplied execution metadata, not independently verified. Internal shortening occurred before submission. Full trace, actual model version, reasoning mode, memory and fresh-conversation status unconfirmed for this run.",
+  "model_label_operator_reported": "GPT-6 Astra",
+  "case_id": "bb_release_006",
+  "single_submission_reported": null,
+  "failures_reported": null,
+  "source_filenames": [
+    "forecast (3).json",
+    "analysis (3).md"
+  ],
+  "kind": "model_run",
+  "tools_reported": null,
+  "browsing_used_reported": null
+}

@@ -1,0 +1,18 @@
+{
+  "actual_model_verified": false,
+  "model_label_operator_reported": "GPT-6 Astra",
+  "kind": "model_run",
+  "notes": "Claude operator record reports internal shortening before final delivery, not a post-grade resubmission. Reasoning mode, tools, fresh conversation, memory and browsing not reconfirmed. Model identity uncertainty from prior Claude run remains unresolved.",
+  "case_id": "bb_cure_005",
+  "source_filenames": [
+    "forecast (3).json",
+    "analysis (3).md"
+  ],
+  "failures_reported": null,
+  "analysis_sha256": "59f44d77a6559785f2aa06fb480bc96ddd7275e9a933233d903b3148475964dd",
+  "single_attempt": null,
+  "forecast_sha256": "160fa443c1438daa1c97d7ee17a2d6aa93226bfe21fa9b834910108ec8151a8e",
+  "draft_word_count_reported": null,
+  "intervention_reported": null,
+  "final_word_count_observed": 561
+}

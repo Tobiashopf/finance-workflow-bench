@@ -1,0 +1,35 @@
+{
+  "record_type": "execution_metadata_addendum",
+  "supersedes_unknowns_in": "execution.json",
+  "operator_confirmed": {
+    "case_001_instructions_supplied": true,
+    "single_attempt": true
+  },
+  "candidate_self_report_relayed_by_operator": {
+    "tools": ["terminal", "unzip", "Python", "Decimal", "jsonschema", "file writing and delivery"],
+    "browsing_used": false,
+    "previous_conversations_consulted": false,
+    "isolated_directory_claimed": true,
+    "input_validation_claimed": true,
+    "schema_validation_claimed": true,
+    "internal_script_formatting_error_corrected": true,
+    "final_submissions_reported": 1,
+    "automatic_personal_memory_present": true,
+    "automatic_personal_memory_used_claimed": false,
+    "analysis_word_count_claimed": 717
+  },
+  "evaluator_observed": {
+    "analysis_whitespace_word_count": 722,
+    "analysis_word_limit": 800,
+    "numerical_score": 100,
+    "numerical_checks_passed": 152,
+    "execution_classification": "exploratory_mixed_instructions"
+  },
+  "still_unknown": ["fresh_conversation", "additional_hints", "reasoning_effort", "exact_supplied_package_hash", "cost", "duration"],
+  "limitations": [
+    "User supplied a retrospective candidate explanation, not a full execution transcript or tool trace.",
+    "Tool use, isolation, validation and non-use of memory are self-reported, not independently verified.",
+    "One attempt refers to one submitted solution, not one tool invocation. Internal debugging is recorded and does not change the numerical score.",
+    "The original submission, grade and preliminary AI review are preserved. Human approval remains pending."
+  ]
+}

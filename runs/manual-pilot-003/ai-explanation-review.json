@@ -1,0 +1,15 @@
+{
+  "review_type": "ai_assisted_preliminary_not_human_review",
+  "case_id": "borrowing_base_002",
+  "reviewer": "Codex assistant",
+  "analysis_sha256": "009d600d1663a934cc02805aeedb05ac31a510677a7f4fc645f276ff112612ef",
+  "word_count": 722,
+  "criteria": {
+    "correct_summary": {"recommendation": "pass", "rationale": "All weekly collateral, financing, cash and debt summaries agree with the reference. Correctly distinguishes unpaid cure, buffer shortfall and unfunded deficit."},
+    "supported_drivers": {"recommendation": "pass", "rationale": "Four dated drivers cite A-EDGE, Z-OLD, A-NEW, B-CORE, C-CORE, D-NEW and cash events with correct amounts. Correctly attributes week-3 overadvance resolution to increased limit rather than cash receipts."},
+    "exception_handling": {"recommendation": "pass", "rationale": "Correct 60/61-day boundary, disputed and related-party precedence, zero-balance exclusions, simultaneous concentration caps, zero-eligible customers and empty final snapshot without debt erasure."},
+    "assumptions_and_limitations": {"recommendation": "pass", "rationale": "Correct rounding and interest assumptions; collateral snapshots are separated from cash events. No invented waivers or refinancing. Negative cash is a projected deficit and later recovery does not establish operational continuity."}
+  },
+  "provenance_caveat": "Candidate claims the execution note was titled Cash Forecast 001. The locally inspected case-002 package instead has the correct Borrowing Base 002 title. Actual materials and candidate tool-validation claims are unverified; this is not a numerical error.",
+  "limitations": "Preliminary artifact review by AI, not human approval or verification of model identity, execution conditions or authorship. Human review remains pending."
+}

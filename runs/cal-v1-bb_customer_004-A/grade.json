@@ -1,0 +1,36 @@
+{
+  "case_id": "bb_customer_004",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "status": "explanation_review_pending",
+  "errors": [],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 32,
+      "checks": 32,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "forecast_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+  "analysis_sha256": "89129c6efa5d7d7b77a0a713ec4afaaa45da8f4a5353bd0fe3fa59d62edca747",
+  "analysis_word_count": 636
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "model_run",
+  "case_id": "bb_customer_004",
+  "model_label_operator_reported": "Claude; configured claude-opus-5-5",
+  "actual_responding_model_verified": false,
+  "actual_model_caveat": "User-supplied operator record explicitly states that the actual responding model may differ.",
+  "reasoning_mode": null,
+  "single_attempt": true,
+  "final_submissions_reported": 1,
+  "tools_reported": [
+    "shell",
+    "Python 3",
+    "decimal",
+    "csv",
+    "json",
+    "jsonschema",
+    "file editor"
+  ],
+  "failures_reported": null,
+  "additional_intervention_reported": false,
+  "fresh_conversation": null,
+  "memory_disabled": null,
+  "browsing_used": null,
+  "transcript_available": false,
+  "source_filenames": {
+    "analysis.md": "analysis4.md",
+    "forecast.json": "forecast4.json"
+  },
+  "artifact_sha256": {
+    "analysis.md": "da4b5fcd7a8fe9c8b31da1a10e1de24a4c13383b9d3e192e77baa81d0c9f37ce",
+    "forecast.json": "234f002a7e021acaa2b670347f4dd16633847aa66077bb6c5f3962aa17feddf3"
+  },
+  "notes": "Metadata supplied by user, not independently verified. Case-003 execution conditions were not inherited. Original bytes preserved."
+}

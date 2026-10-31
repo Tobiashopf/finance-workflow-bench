@@ -1,0 +1,14 @@
+{
+  "review_type": "ai_assisted_preliminary_not_human_review",
+  "reviewer": "Codex assistant",
+  "forecast_sha256": "4b40f5c9f531200ad48e07c85a3a7a543bca5366753b6b76576a980984023c5d",
+  "analysis_sha256": "65e6558799f19e0c72ad146b00cda8ecc742b9391499f6ec480f371e3040eedd",
+  "word_count": 765,
+  "criteria": {
+    "correct_summary": {"recommendation": "pass", "rationale": "Correct minimum cash -39,945.80 in week 6, breaches in weeks 5 and 6, deficit only in week 6, peak debt 200,000 first in week 5, draws 175,797.64, repayments 235,797.64 and interest 1,862.89. Full repayment in week 11 and final cash 126,137.11 agree with reference."},
+    "supported_drivers": {"recommendation": "pass", "rationale": "Five dated drivers cite source records. Weeks 4-6 payment clusters, constrained draw, and weeks 7-8 collections agree with source data and reference. Additional week-2 driver correctly cites AP-02 40,000, PAYROLL-02 24,000 and AR-02-A/B total 55,000 with draw 11,060.24."},
+    "complete_exceptions": {"recommendation": "pass", "rationale": "Correct duplicate counts, retained distinct invoices, partial settlements, both internal transfers, settled invoices and all three out-of-horizon records. Exclusion precedence is correctly explained."},
+    "assumptions_and_limitations": {"recommendation": "pass", "rationale": "Separates supplied assumptions from computed conclusions. Explains weekly versus intraday scope, negative cash as diagnostic rather than authorized overdraft, exact arithmetic and rounding. Does not introduce discretionary financing or rescheduling into calculations."}
+  },
+  "limitations": "Artifact review by AI, not human approval or verification of model identity, tool execution or authorship. Candidate claims of input validation do not establish observed tool use. Do not pass this file as a human review."
+}

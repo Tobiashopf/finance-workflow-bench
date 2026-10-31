@@ -1,0 +1,26 @@
+{
+  "kind": "model_run",
+  "case_id": "bb_customer_004",
+  "model_label_operator_reported": "GPT-6 Astra",
+  "actual_responding_model_verified": false,
+  "actual_model_caveat": null,
+  "reasoning_mode": null,
+  "single_attempt": null,
+  "final_submissions_reported": null,
+  "tools_reported": null,
+  "failures_reported": null,
+  "additional_intervention_reported": null,
+  "fresh_conversation": null,
+  "memory_disabled": null,
+  "browsing_used": null,
+  "transcript_available": false,
+  "source_filenames": {
+    "analysis.md": "analysis (3).md",
+    "forecast.json": "forecast (3).json"
+  },
+  "artifact_sha256": {
+    "analysis.md": "89129c6efa5d7d7b77a0a713ec4afaaa45da8f4a5353bd0fe3fa59d62edca747",
+    "forecast.json": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2"
+  },
+  "notes": "Metadata supplied by user, not independently verified. Case-003 execution conditions were not inherited. Original bytes preserved."
+}

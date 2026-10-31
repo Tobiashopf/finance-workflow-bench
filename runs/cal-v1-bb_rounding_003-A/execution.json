@@ -1,0 +1,25 @@
+{
+  "kind": "model_run",
+  "case_id": "bb_rounding_003",
+  "run_id": "cal-v1-bb_rounding_003-A",
+  "model_label_operator_reported": "GPT-6 Astra",
+  "prior_model_label_context": null,
+  "reasoning_mode": null,
+  "single_attempt": null,
+  "fresh_conversation": true,
+  "additional_hints": false,
+  "memory_disabled": true,
+  "browsing_used_operator_reported": false,
+  "local_tools_used": null,
+  "transcript_available": false,
+  "source_filenames": {
+    "analysis.md": "analysis3",
+    "forecast.json": "forecast3"
+  },
+  "artifact_sha256": {
+    "analysis.md": "c3ff5013e633dd4e5cd4d139dd20e94eecd29e84138ea107cf6e9734b5c58931",
+    "forecast.json": "af45ef7afeedde9ac89ab32e0b1a8645ebfb84e13c7e71c715b136b0ba390391"
+  },
+  "outcome": "completed_artifacts_received",
+  "metadata_origin": "User confirmed new conversations, no hints, memory disabled and no navigation tools for both runs. Attempt count, reasoning modes and local tools not separately confirmed."
+}

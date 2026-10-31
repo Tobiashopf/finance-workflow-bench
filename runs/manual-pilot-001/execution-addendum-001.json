@@ -1,0 +1,23 @@
+{
+  "record_type": "operator_reported_execution_addendum",
+  "applies_to": "manual-pilot-001",
+  "original_execution_sha256": "4c86e2652a9e9cd41ceccf0bf88c91740ef22af9c6a079f95a9a072496254710",
+  "source": "User clarification in the project conversation",
+  "confirmed": {
+    "single_attempt": true,
+    "additional_hints": false,
+    "tools_used": ["PowerShell"],
+    "arithmetic": "Exact decimal arithmetic, as reported by the user",
+    "activities": ["Read input files", "Calculated the forecast", "Generated both deliverables", "Validated JSON against the supplied schema"],
+    "python_attempted": true,
+    "python_available": false,
+    "python_used_for_calculation": false,
+    "browsing_used": false,
+    "web_search_used": false
+  },
+  "still_unconfirmed": ["service/provider", "exact model version", "fresh conversation", "full package delivery", "runtime and tool versions", "schema validator implementation", "timestamps", "token usage", "per-run cost"],
+  "transcript_available": false,
+  "interpretation": "User reports successful use of an alternative calculation tool after Python was unavailable. The attempt completed, so the unavailable Python runtime is an environment event, not a failed run. This is a tool-assisted result, not a tool-free reasoning evaluation.",
+  "verification": "User-reported; execution trace not supplied or independently verified",
+  "effect_on_grade": "None. Original artifacts, execution record, import record and numerical grade are preserved. Human explanation review remains pending."
+}

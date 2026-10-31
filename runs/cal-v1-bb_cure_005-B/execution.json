@@ -1,0 +1,18 @@
+{
+  "actual_model_verified": false,
+  "model_label_operator_reported": "Claude",
+  "kind": "model_run",
+  "notes": "Claude operator record reports internal shortening before final delivery, not a post-grade resubmission. Reasoning mode, tools, fresh conversation, memory and browsing not reconfirmed. Model identity uncertainty from prior Claude run remains unresolved.",
+  "case_id": "bb_cure_005",
+  "source_filenames": [
+    "forecast4.json",
+    "analysis4.md"
+  ],
+  "failures_reported": false,
+  "analysis_sha256": "fc7f0ef3048335806ba247fd216803023b542de825d6d903445a579831d6ff53",
+  "single_attempt": true,
+  "forecast_sha256": "f80889bf234898c89bd4c78f1629ff5f91c774a86b625c614cfc95614dc31ec3",
+  "draft_word_count_reported": 825,
+  "intervention_reported": false,
+  "final_word_count_observed": 789
+}

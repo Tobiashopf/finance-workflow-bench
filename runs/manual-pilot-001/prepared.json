@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+  "state": "prepared",
+  "created_at_utc": "2026-10-30T20:17:24.999007+00:00",
+  "package_sha256": "c0304e03b88e1a8a7cf3541afe40db3da5fac7db348e264b7e37cc5f1e14ab5b",
+  "case_id": "cash_forecast_001",
+  "model_execution": "not_started",
+  "paid_calls_authorized": false,
+  "proposed_protocol": {
+    "attempts": 1,
+    "fresh_conversation": true,
+    "feedback_during_attempt": false,
+    "browsing": "not_requested",
+    "reference_access": "not_provided"
+  },
+  "enforcement": "operator_reported_external_environment_not_verified"
+}

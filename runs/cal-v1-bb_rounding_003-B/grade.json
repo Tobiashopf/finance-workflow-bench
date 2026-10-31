@@ -1,0 +1,38 @@
+{
+  "case_id": "bb_rounding_003",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "4d4fb37339b69147bef0763f40facda1a317ceac91d489c6dc584ff35912123c",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "status": "incomplete_submission",
+  "errors": [
+    "Explanation must contain 1 to 800 words"
+  ],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 17,
+      "checks": 17,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 29,
+      "checks": 29,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "forecast_sha256": "ce08e7be4523d280735d848f2bbebe6e70e25c4da33f5420fcde0278d7d738dd",
+  "analysis_sha256": "412f0a1f5c1916ab111d3e34875a33594b6345fa69e8cfa9186c4841fe8c6e97",
+  "analysis_word_count": 802
+}

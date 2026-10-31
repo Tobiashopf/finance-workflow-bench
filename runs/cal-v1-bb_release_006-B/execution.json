@@ -1,0 +1,24 @@
+{
+  "additional_intervention_reported": false,
+  "actual_model_verified": false,
+  "final_word_count_observed": 801,
+  "forecast_sha256": "1c757d60f2162171b8b72682c94366473078a0af09e4ec4b788d69a21ebc1acd",
+  "draft_word_count_reported": 802,
+  "analysis_sha256": "42c494a6f1a462a4c743795b9bf8b6ebaee1f80e066c3a2bdf7fcbb092ab5bc7",
+  "notes": "User-supplied execution metadata, not independently verified. Internal shortening occurred before submission. Full trace, actual model version, reasoning mode, memory and fresh-conversation status unconfirmed for this run.",
+  "model_label_operator_reported": "Claude",
+  "case_id": "bb_release_006",
+  "single_submission_reported": true,
+  "failures_reported": false,
+  "source_filenames": [
+    "forecast4.json",
+    "analysis4.md"
+  ],
+  "kind": "model_run",
+  "tools_reported": [
+    "local Python",
+    "decimal",
+    "jsonschema"
+  ],
+  "browsing_used_reported": false
+}

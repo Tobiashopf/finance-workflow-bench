@@ -1,0 +1,36 @@
+{
+  "case_id": "bb_release_006",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "f7dd58061c7982682db9d10795cf307f829d6e88fae0d09fe8f764a4ee816f67",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "status": "explanation_review_pending",
+  "errors": [],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 16,
+      "checks": 16,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "forecast_sha256": "f7dd58061c7982682db9d10795cf307f829d6e88fae0d09fe8f764a4ee816f67",
+  "analysis_sha256": "a4b13f9463c9b1f0e678700ffd84269f6ea410054791553159cf81e573a372ff",
+  "analysis_word_count": 559
+}

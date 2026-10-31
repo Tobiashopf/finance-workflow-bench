@@ -1,0 +1,22 @@
+{
+  "kind": "model_run",
+  "case_id": "cash_forecast_001",
+  "package_sha256": "c0304e03b88e1a8a7cf3541afe40db3da5fac7db348e264b7e37cc5f1e14ab5b",
+  "imported_at_utc": "2026-10-30T20:39:35.259582+00:00",
+  "metadata_origin": "operator_reported_not_independently_verified",
+  "elapsed_seconds_operator_reported": null,
+  "execution_sha256": "4c86e2652a9e9cd41ceccf0bf88c91740ef22af9c6a079f95a9a072496254710",
+  "artifact_sha256": {
+    "forecast.json": "735d7fbd71568cd3279eedb50e6f35211a7a78bb3c27b2687ecd6c97994e872a",
+    "analysis.md": "45a057860ef3827c1e9cf485320d4fbac8ac84b02e636b771ad85ce86fdddfe1"
+  },
+  "outcome": "completed",
+  "model_grade": {
+    "status": "explanation_review_pending",
+    "numerical_score": 100.0,
+    "numerical_passed": true,
+    "overall_passed": false
+  },
+  "transcript_available": false,
+  "isolation": "external_environment_not_verified"
+}

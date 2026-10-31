@@ -1,0 +1,27 @@
+{
+  "review_type": "ai_assisted_preliminary_not_human_review",
+  "reviewer": "Codex assistant",
+  "forecast_sha256": "735d7fbd71568cd3279eedb50e6f35211a7a78bb3c27b2687ecd6c97994e872a",
+  "analysis_sha256": "45a057860ef3827c1e9cf485320d4fbac8ac84b02e636b771ad85ce86fdddfe1",
+  "word_count": 494,
+  "recommendation": "All four explanation criteria appear satisfied; human review remains pending.",
+  "criteria": {
+    "correct_summary": {
+      "recommendation": "pass",
+      "rationale": "Correct minimum closing cash of -39,945.80 in week 6 with no ties; correctly identifies buffer breaches only in weeks 5 and 6 and an unfunded deficit only in week 6. Peak principal of 200,000 first occurs in week 5. Draws 175,797.64, repayments 235,797.64, and interest 1,862.89 match the numerical reference. Debt repayment in week 11 and week-13 closing cash of 126,137.11 also match."
+    },
+    "supported_drivers": {
+      "recommendation": "pass",
+      "rationale": "Four material drivers are explained with source filenames and identifiers. AP-04 is 95,000 less 15,000 paid, due January 29; FREIGHT-04 is 5,000 due January 25; PAYROLL-04 is 24,000 due January 29. AP-05 is 120,000 on February 5, with rent 8,000 and other recurring expense 2,000, against two receipts of 17,500 on February 3. Week-6 supplier/tax/freight/payroll/recurring amounts and dates match the input CSVs; the cash decline of 88,400 includes 400 interest. Week-7 and week-8 receipts and repayments also match."
+    },
+    "complete_exceptions": {
+      "recommendation": "pass",
+      "rationale": "Identifies all five excess duplicate rows across four record identities and retains legitimate equal-value distinct invoices. Correctly nets prior payments on AR-03-A and AP-04. Identifies both internal transfers, both settled records, and all three April 5 out-of-horizon records. States the required exclusion precedence and avoids counting previously settled amounts again."
+    },
+    "assumptions_and_limitations": {
+      "recommendation": "pass",
+      "rationale": "Explicitly distinguishes supplied dates and full collection assumptions from verified forecasts, limits the analysis to deterministic weekly closing liquidity, and treats negative cash as a diagnostic convention rather than authorized overdraft financing. Describes opening-principal interest and the prescribed financing policy without adding discretionary funding or payment deferral."
+    }
+  },
+  "limitations": "This document must not be passed as a human-review file to the grader. No actual execution transcript was available. It assesses the submitted artifacts and source data, not provenance, independent authorship or model behavior during execution."
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "model_run",
+  "case_id": "borrowing_base_002",
+  "model_label_operator_reported": "GPT -6 Astra",
+  "single_attempt": true,
+  "provider": null,
+  "reasoning_effort": null,
+  "fresh_conversation": null,
+  "tools_used": null,
+  "additional_hints": null,
+  "browsing_used": null,
+  "model_version": null,
+  "started_at_utc": null,
+  "finished_at_utc": null,
+  "cost_usd": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "transcript_available": false,
+  "outcome": "completed_artifacts_received",
+  "metadata_origin": "User reported GPT -6 Astra, uma única tentativa. Other conditions were not confirmed for this run and are not inherited from run 001.",
+  "source_filenames": {"forecast.json": "forecast2.json", "analysis.md": "analysis2.md"},
+  "artifact_sha256": {
+    "forecast.json": "cb81ae2096de116181bc255ce0870ede50001939808de0ff8ed7d603188f9349",
+    "analysis.md": "f623d588bb6f5779fd0d58b60eeec5808ab84402542a5783d4dc27104d4a5013"
+  },
+  "note": "Files renamed only for the grader; content preserved. Case-001 importer was not used. Execution environment and provenance are not independently verified."
+}

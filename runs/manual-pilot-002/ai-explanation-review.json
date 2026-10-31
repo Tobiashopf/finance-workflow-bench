@@ -1,0 +1,26 @@
+{
+  "review_type": "ai_assisted_preliminary_not_human_review",
+  "case_id": "borrowing_base_002",
+  "reviewer": "Codex assistant",
+  "analysis_sha256": "f623d588bb6f5779fd0d58b60eeec5808ab84402542a5783d4dc27104d4a5013",
+  "word_count": 491,
+  "criteria": {
+    "correct_summary": {
+      "recommendation": "pass",
+      "rationale": "All four weekly eligible, recognized, base, limit, cash and debt figures agree with the verified reference. Interest, unused capacity, required/actual cures and voluntary repayments are correct. Week-2 unpaid cure of 6,600.60, zero cash deficit and 50,000 buffer shortfall are distinguished from week-4 overadvance of 100,821.80, cash deficit of 20,201.64 and buffer shortfall of 70,201.64."
+    },
+    "supported_drivers": {
+      "recommendation": "pass",
+      "rationale": "At least three material collateral drivers are supported by dates and identifiers: A-EDGE's 60-to-67-day transition, the week-2 A-NEW/B-CORE/C-CORE balances, and the week-3 B/C recovery plus D-NEW. Customer caps of 75,000, 50,000 and 100,000 and corresponding deductions match the reference. Cash-event IDs and all receipt/payment amounts are stated correctly."
+    },
+    "exception_handling": {
+      "recommendation": "pass",
+      "rationale": "Correctly handles 60 versus 61 days, disputed/related-party precedence for X-MULTI and Y-MULTI, zero-balance exclusions, zero-eligible customers and the explicitly empty fourth snapshot. Does not reuse prior collateral or erase debt when the limit becomes zero."
+    },
+    "assumptions_and_limitations": {
+      "recommendation": "pass",
+      "rationale": "Explicitly uses supplied contractual rules, distinguishes collateral snapshots from receipts/write-offs/payments, describes negative cash as a projected funding failure rather than an authorized overdraft, and does not introduce refinancing, waivers, payment deferrals or penalties. Warns that later recovery does not resolve the earlier operational funding problem."
+    }
+  },
+  "limitations": "Artifact review only, not independent verification of model identity, tool use, execution conditions or authorship. Human explanation review remains pending; this document is not a human approval."
+}

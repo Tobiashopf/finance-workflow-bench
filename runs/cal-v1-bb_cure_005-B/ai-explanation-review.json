@@ -1,0 +1,11 @@
+{
+  "analysis_sha256": "fc7f0ef3048335806ba247fd216803023b542de825d6d903445a579831d6ff53",
+  "criteria": {
+    "assumptions_and_limitations": "pass: separates snapshots from cash, respects cure priority and rounding, no invented refinancing",
+    "correct_summary": "pass: all weekly values match; buffer shortfalls only weeks 1 and 3, no deficit or closing overadvance",
+    "supported_drivers": "pass: dated A/B/C/D observations and cash events support four drivers",
+    "exception_handling": "pass: all 14 invoices eligible; absent D not carried forward; customer concentration uses original total"
+  },
+  "limitations": "Preliminary AI content review only. Human approval pending. Tool validation claims not independently verified.",
+  "review_type": "ai_assisted_preliminary_not_human_review"
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "model_run",
+  "case_id": "borrowing_base_002",
+  "model_label_operator_reported": "Claude Code Opus 5.5",
+  "single_attempt": true,
+  "reasoning_effort": null,
+  "fresh_conversation": null,
+  "tools_used": null,
+  "additional_hints": null,
+  "browsing_used": null,
+  "transcript_available": false,
+  "package_identity_confirmed": false,
+  "outcome": "completed_artifacts_received",
+  "source_filenames": {
+    "forecast.json": "forecast (1).json",
+    "analysis.md": "analysis (1).md"
+  },
+  "artifact_sha256": {
+    "forecast.json": "937a81b829525ec05f2cb34ae01a7f3ada19305af7e347603e3dd03a52fc8e6a",
+    "analysis.md": "009d600d1663a934cc02805aeedb05ac31a510677a7f4fc645f276ff112612ef"
+  },
+  "notes": [
+    "Model label and single attempt are user-reported; other execution conditions are unknown.",
+    "Submission identifies case 002 despite prior suggestion to start with case 001.",
+    "Candidate claims execution note was titled Cash Forecast 001. Local case-002 ZIP has the correct Borrowing Base 002 title. Actual supplied materials are unconfirmed.",
+    "Original bytes preserved; no candidate instructions executed."
+  ]
+}

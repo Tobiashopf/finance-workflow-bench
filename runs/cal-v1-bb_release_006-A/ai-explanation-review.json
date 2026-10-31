@@ -1,0 +1,12 @@
+{
+  "note": "Claude timing sensitivity is qualitative, not an independently tested intraday forecast. Human approval pending. Content review cannot override word-limit failure.",
+  "criteria": {
+    "exception_handling": "pass: 12 eligible observations, no phantom rows on empty snapshot, no concentration deductions",
+    "supported_drivers": "pass: dates and invoice/cash IDs support ceiling, exact buffer, empty snapshot and funded final cure",
+    "assumptions_and_limitations": "pass: separates collateral from receipts and required cure from closing overadvance; uses opening debt interest and contractual waterfall",
+    "correct_summary": "pass: all numerical summaries and zero closing violations match"
+  },
+  "word_count": 559,
+  "analysis_sha256": "a4b13f9463c9b1f0e678700ffd84269f6ea410054791553159cf81e573a372ff",
+  "review_type": "ai_assisted_preliminary_not_human_review"
+}

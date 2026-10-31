@@ -1,0 +1,26 @@
+{
+  "review_type": "ai_assisted_preliminary_not_human_review",
+  "reviewer": "Codex assistant",
+  "case_id": "bb_customer_004",
+  "analysis_sha256": "da4b5fcd7a8fe9c8b31da1a10e1de24a4c13383b9d3e192e77baa81d0c9f37ce",
+  "word_count": 751,
+  "criteria": {
+    "supported_drivers": {
+      "rationale": "Dated drivers cite A-1/A-2/A-3 aggregated into customer A, B-1 growth, D-1 zero balance, week-3 C/D growth and week-4 equal customer balances. Financial amounts and cash events match inputs.",
+      "recommendation": "pass"
+    },
+    "correct_summary": {
+      "rationale": "All four weekly summaries agree with reference, including buffer breaches only in weeks 1 and 2, no closing overadvance or deficit, and interest 221.69 in week 4.",
+      "recommendation": "pass"
+    },
+    "exception_handling": {
+      "rationale": "Correctly excludes only D-1 on January 17 while retaining zero customer D and shared threshold. All 24 observations have zero days past due. Caps applied per customer using original eligible total.",
+      "recommendation": "pass"
+    },
+    "assumptions_and_limitations": {
+      "rationale": "Separates authoritative collateral snapshots from actual cash events, uses contractual rounding and cure priority, and does not invent waivers or funding. Later liquidity recovery does not erase earlier buffer breaches.",
+      "recommendation": "pass"
+    }
+  },
+  "limitations": "AI review of artifacts only. Human approval pending. Candidate claims of validation are not observed tool traces. No model identity attestation."
+}

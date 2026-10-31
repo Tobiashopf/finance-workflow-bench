@@ -1,0 +1,25 @@
+{
+  "kind": "model_run",
+  "case_id": "cash_forecast_001",
+  "model_label_operator_reported": "Claude code Opus 5.5",
+  "single_attempt": null,
+  "fresh_conversation": null,
+  "memory_disabled": null,
+  "tools_used": null,
+  "browsing_used": null,
+  "additional_hints": null,
+  "reasoning_effort": null,
+  "transcript_available": false,
+  "source_filenames": {
+    "analysis.md": "analysis (2).md",
+    "forecast.json": "forecast (2).json"
+  },
+  "artifact_sha256": {
+    "analysis.md": "65e6558799f19e0c72ad146b00cda8ecc742b9391499f6ec480f371e3040eedd",
+    "forecast.json": "4b40f5c9f531200ad48e07c85a3a7a543bca5366753b6b76576a980984023c5d"
+  },
+  "notes": [
+    "User confirmed model label and case 001 execution. Feito acknowledges the requested step but does not independently document each execution condition.",
+    "Conditions and tool claims from run 003 are not inherited. Original bytes preserved."
+  ]
+}

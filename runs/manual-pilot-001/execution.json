@@ -1,0 +1,26 @@
+{
+  "kind": "model_run",
+  "provider": "not_reported",
+  "model": "GPT-6 Astra Médio",
+  "model_version": null,
+  "outcome": "completed",
+  "started_at_utc": null,
+  "finished_at_utc": null,
+  "tools_used": [],
+  "settings": {
+    "model_label_source": "User reported: Usei o GPT-6 Astra Médio",
+    "tool_use_observation": "not_reported; empty tools_used means no tools have been reported, not that no tools were used",
+    "fresh_conversation": null,
+    "single_attempt": null,
+    "additional_hints": null,
+    "browsing_used": null,
+    "package_delivery_confirmed": null
+  },
+  "input_tokens": null,
+  "output_tokens": null,
+  "reported_cost_usd": null,
+  "cost_basis": "unknown",
+  "transfer_method": "User supplied local forecast.json and analysis.md; original generation/download method not reported",
+  "failure_details": null,
+  "operator_notes": "User supplied the two requested artifacts and reported the model label GPT-6 Astra Médio. Service/provider, exact model version, fresh-conversation status, attempt count, tool use, extra hints, package delivery, timestamps, tokens and per-run cost were not confirmed. No transcript was supplied. Metadata is user-reported, not independently verified."
+}

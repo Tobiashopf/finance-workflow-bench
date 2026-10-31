@@ -1,0 +1,27 @@
+{
+  "review_type": "ai_assisted_preliminary_not_human_review",
+  "reviewer": "Codex assistant",
+  "case_id": "bb_rounding_003",
+  "analysis_sha256": "412f0a1f5c1916ab111d3e34875a33594b6345fa69e8cfa9186c4841fe8c6e97",
+  "word_count": 802,
+  "criteria": {
+    "supported_drivers": {
+      "rationale": "Four dated collateral drivers cite A-1/B-1/C-1 and D-1, exact concentration deductions, the four-cent week-2 headroom, week-3 ceiling and week-4 contraction. Cash-event explanations agree with inputs.",
+      "recommendation": "pass"
+    },
+    "assumptions_and_limitations": {
+      "recommendation": "pass",
+      "rationale": "Correct half-up interest and floor collateral rounding; snapshots separate from cash; prescribed financing priority without invented funds. GPT explicitly notes intraweek limitations; Claude describes weekly closing process and unresolved liquidity needs."
+    },
+    "exception_handling": {
+      "rationale": "All 13 observations are eligible, future-due and unflagged. Customer caps use original total; absent D-1 is not treated as a receipt.",
+      "recommendation": "pass"
+    },
+    "correct_summary": {
+      "rationale": "Weekly numerical summary matches reference; buffer breaches in weeks 1, 2 and 4, no closing overadvance or cash deficit.",
+      "recommendation": "pass"
+    }
+  },
+  "artifact_compliance": "802 whitespace-delimited words including headings/table tokens exceed 800. Incomplete submission despite correct numbers and preliminary financial-content review. No text alteration or retry.",
+  "limitations": "Not human approval, tool-use verification or evidence of general model superiority."
+}
