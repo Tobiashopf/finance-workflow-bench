@@ -23,7 +23,7 @@ The two over-length submissions retain their numerical scores but have `incomple
 
 - **Financial specification:** [case 005](cases/bb_cure_005/task.md) distinguishes a paid debt obligation from adequate cash reserves.
 - **Reference implementation:** [Decimal calculator](src/finance_workflow_bench/borrowing_base.py), checked against a [separate integer-cent implementation](scripts/verify_borrowing_base.py) using a net-position financing calculation.
-- **Evaluator:** [calibration CLI](scripts/grade_calibration.py) selects operator-controlled references, validates output and compares exact monetary values.
+- **Evaluator:** [calibration CLI](scripts/grade_calibration.py) selects operator-controlled references, validates output and compares exact monetary values. Borrowing Base and calibration graders also support hash-bound operator explanation reviews; see [grading and review workflow](docs/grading.md).
 - **Tests:** [calibration tests](tests/test_calibration.py) cover deliberate financial errors, wrong case IDs, changed reference hashes, invoice splitting, record order and package contents.
 - **Evidence:** each run preserves submitted files, hashes, grader output, execution metadata and a separate preliminary AI explanation review.
 
