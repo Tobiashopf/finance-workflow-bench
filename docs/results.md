@@ -2,7 +2,7 @@
 
 ## Calibration battery
 
-Eight submitted artifacts were evaluated against four pre-specified synthetic cases. All eight achieved exact numerical agreement. Six explanations met the published 800-word limit; two Claude-labelled submissions contained 802 and 801 whitespace-delimited words. These two retain 100/100 numerical scores but are incomplete submissions. The remaining six await human explanation review; none is recorded as fully approved.
+Eight submitted artifacts were evaluated against four pre-specified synthetic cases, and all eight achieved exact numerical agreement. Six explanations met the published 800-word limit; two Claude-labelled submissions contained 802 and 801 whitespace-delimited words. Those two retain 100/100 numerical scores but are incomplete submissions and were not eligible for formal explanation review. The six eligible explanations have all received formal human review; every review resulted in `explanation_fail`, so none is recorded as fully approved.
 
 | Case | GPT run | Claude run | Checks per artifact |
 |---|---|---|---:|
@@ -11,7 +11,24 @@ Eight submitted artifacts were evaluated against four pre-specified synthetic ca
 | 005 | [A](../runs/cal-v1-bb_cure_005-A/grade.json) | [B](../runs/cal-v1-bb_cure_005-B/grade.json) | 128 |
 | 006 | [A](../runs/cal-v1-bb_release_006-A/grade.json) | [B](../runs/cal-v1-bb_release_006-B/grade.json) | 124 |
 
-All submitted files were preserved without editing. Each run folder also contains execution metadata and a preliminary AI content review. Internal drafting changes before submission are distinguished from revisions after evaluation. The reported shortening of the case-006 explanation did not bring its delivered text below the limit.
+## Formal explanation review
+
+| Run | Words | Final status | Human review record | Final grader report |
+|---|---:|---|---|---|
+| 003-A | 545 | `explanation_fail` | [review](../reviews/human/cal-v1-bb_rounding_003-A-review.json) | [report](../reports/human/bb_rounding_003-A-reviewed.json) |
+| 003-B | 802 | `incomplete_submission` | Not eligible | [grade](../runs/cal-v1-bb_rounding_003-B/grade.json) |
+| 004-A | 636 | `explanation_fail` | [review](../reviews/human/cal-v1-bb_customer_004-A-review.json) | [report](../reports/human/bb_customer_004-A-reviewed.json) |
+| 004-B | 751 | `explanation_fail` | [review](../reviews/human/cal-v1-bb_customer_004-B-review.json) | [report](../reports/human/bb_customer_004-B-reviewed.json) |
+| 005-A | 561 | `explanation_fail` | [review](../reviews/human/cal-v1-bb_cure_005-A-review.json) | [report](../reports/human/bb_cure_005-A-reviewed.json) |
+| 005-B | 789 | `explanation_fail` | [review](../reviews/human/cal-v1-bb_cure_005-B-review.json) | [report](../reports/human/bb_cure_005-B-reviewed.json) |
+| 006-A | 559 | `explanation_fail` | [review](../reviews/human/cal-v1-bb_release_006-A-review.json) | [report](../reports/human/bb_release_006-A-reviewed.json) |
+| 006-B | 801 | `incomplete_submission` | Not eligible | [grade](../runs/cal-v1-bb_release_006-B/grade.json) |
+
+A single reviewer is identified in the six formal review records; no independent second review is recorded. The two over-length submissions remain incomplete and were not reviewed for final approval.
+
+
+
+Run folders retain the submitted content, original numerical grades, execution metadata, and separate preliminary AI reviews. Human-review reports are bound to the hashes recorded in the original grades. For the 004-A, 004-B, and 006-A final regrades, CRLF-to-LF normalization was performed in isolated copies without changing those local source folders. During the earlier 005-B regrade, the local working submission's line endings were normalized to LF to match its registered hashes; no financial or explanatory content changed. The reported shortening of the case-006 explanation did not bring its delivered text below the limit.
 
 ## Interpretation
 
@@ -29,4 +46,4 @@ Historical design documents describe the state when authored and may say that a 
 
 ## Next work
 
-The planned model runs are complete. Remaining work is human explanation review and repository presentation/publication. Additional cases would require a new, prospectively specified evaluation version; current results must not be replaced or rescored to produce a preferred outcome.
+The planned model runs and formal human reviews of all six eligible explanations are complete. All six human reviews resulted in `explanation_fail`; the two over-length submissions remain incomplete. Remaining work is repository presentation/publication. Additional cases would require a new, prospectively specified evaluation version; current results must not be replaced or rescored to produce a preferred outcome.

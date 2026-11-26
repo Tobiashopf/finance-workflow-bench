@@ -1,0 +1,82 @@
+{
+  "case_id": "bb_release_006",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "f7dd58061c7982682db9d10795cf307f829d6e88fae0d09fe8f764a4ee816f67",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "status": "explanation_fail",
+  "errors": [],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 16,
+      "checks": 16,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "explanation": {
+    "status": "failed",
+    "reviewer": "Tobias Hopf de Souza",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pass",
+        "rationale": "The explanation correctly summarizes the first three weeks at the USD 200,000 contractual limit, then the 2027-01-31 empty collateral snapshot, USD 150,000 mandatory repayment, and closing cash and debt of USD 69,700 and zero. It also correctly reports no closing buffer shortfall, unpaid cure, overadvance, or unfunded deficit."
+      },
+      "supported_drivers": {
+        "verdict": "fail",
+        "rationale": "The explanation identifies snapshot dates, invoice IDs A-1 through D-1, their balances, the concentration threshold, and the cash-event IDs and amounts. It names snapshot_dates.csv and cash_events.csv, but does not name receivables_snapshots.csv as the source of the invoice balances supporting the collateral calculations. The review protocol requires material drivers to be traceable to input files as well as dates and record identities."
+      },
+      "complete_exceptions": {
+        "verdict": "pass",
+        "rationale": "The explanation correctly treats the 2027-01-31 snapshot as a valid empty snapshot, does not carry forward prior invoices, and does not treat their absence as a receipt. It also notes that the twelve earlier invoice observations are eligible, repeated IDs across dates are not duplicates, no disputes, related parties, overdue invoices, or zero balances occur, and the final mandatory cure is paid with no closing violation."
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pass",
+        "rationale": "The explanation uses the contractual interest and rounding rules, treats snapshots as independent states after receipts, derives cash flows only from cash_events.csv, and does not assume collections, refinancing, waivers, or delayed payments. It distinguishes collateral from cash and states that a weekly projection does not assure intraday liquidity."
+      }
+    }
+  },
+  "forecast_sha256": "f7dd58061c7982682db9d10795cf307f829d6e88fae0d09fe8f764a4ee816f67",
+  "analysis_sha256": "a4b13f9463c9b1f0e678700ffd84269f6ea410054791553159cf81e573a372ff",
+  "analysis_word_count": 559,
+  "human_review_template": {
+    "grader_version": "calibration-1.0",
+    "forecast_sha256": "f7dd58061c7982682db9d10795cf307f829d6e88fae0d09fe8f764a4ee816f67",
+    "analysis_sha256": "a4b13f9463c9b1f0e678700ffd84269f6ea410054791553159cf81e573a372ff",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

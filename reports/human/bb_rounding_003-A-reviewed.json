@@ -1,0 +1,82 @@
+{
+  "case_id": "bb_rounding_003",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "4d4fb37339b69147bef0763f40facda1a317ceac91d489c6dc584ff35912123c",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "status": "explanation_fail",
+  "errors": [],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 17,
+      "checks": 17,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 29,
+      "checks": 29,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "explanation": {
+    "status": "failed",
+    "reviewer": "Tobias Hopf de Souza",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pass",
+        "rationale": "The explanation accurately summarizes the weekly collateral, borrowing-base and financing outcomes. It correctly identifies the mandatory week-one cure, buffer breaches in weeks one, two and four, the absence of an unfunded deficit, and the absence of a closing overadvance."
+      },
+      "supported_drivers": {
+        "verdict": "fail",
+        "rationale": "The explanation includes dates, event identifiers and amounts, but does not explicitly identify the input source files supporting the material cash-event and receivables drivers. Under the protocol, material drivers must be traceable to the applicable input files as well as dates, record identifiers and values; the current explanation does not make that source-file linkage sufficiently explicit."
+      },
+      "complete_exceptions": {
+        "verdict": "pass",
+        "rationale": "The explanation accounts for the eligible invoice population, concentration deductions, the relevant cash events and the applicable financing/cure outcomes. It does not invent unsupported exceptions or conflate collateral movements with cash movements."
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pass",
+        "rationale": "The explanation applies the stated eligibility, concentration, advance-rate and rounding rules, describes the cure priority and distinguishes the minimum-cash buffer from an unfunded deficit. It does not treat collateral as cash or a reduced borrowing limit as an automatic debt repayment."
+      }
+    }
+  },
+  "forecast_sha256": "af45ef7afeedde9ac89ab32e0b1a8645ebfb84e13c7e71c715b136b0ba390391",
+  "analysis_sha256": "c3ff5013e633dd4e5cd4d139dd20e94eecd29e84138ea107cf6e9734b5c58931",
+  "analysis_word_count": 545,
+  "human_review_template": {
+    "grader_version": "calibration-1.0",
+    "forecast_sha256": "af45ef7afeedde9ac89ab32e0b1a8645ebfb84e13c7e71c715b136b0ba390391",
+    "analysis_sha256": "c3ff5013e633dd4e5cd4d139dd20e94eecd29e84138ea107cf6e9734b5c58931",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

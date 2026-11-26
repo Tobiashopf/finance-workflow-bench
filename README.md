@@ -15,7 +15,7 @@ The four-case calibration battery contains eight received submissions, two per c
 | 005 | Fully paid mandatory cure with a cash-buffer breach | 128 | 100/100; 561 words | 100/100; 789 words |
 | 006 | Zero collateral with enough cash to repay debt | 124 | 100/100; 559 words | 100/100; **801 words** |
 
-The two over-length submissions retain their numerical scores but have `incomplete_submission` status. The others await human explanation review. No submission is represented as fully human-approved. Model labels are operator-reported; the Claude configuration did not establish the actual responding model's identity. Conditions and tool use were not uniformly verified.
+The two over-length submissions retain their numerical scores but have `incomplete_submission` status and were not eligible for formal explanation review. The six within-limit submissions received formal human reviews; all six were recorded as `explanation_fail`. No submission is represented as fully human-approved. Model labels are operator-reported; the Claude configuration did not establish the actual responding model's identity. Conditions and tool use were not uniformly verified.
 
 [Results and limitations](docs/results.md) · [Detailed Portuguese report](reports/calibration-v1-final-pt.md) · [Human review protocol (PT-BR)](docs/human-review-protocol-pt.md) · [Operator checklist](docs/human-review-checklist-pt.md) · [Raw run records](runs/)
 
@@ -80,6 +80,6 @@ There are no API integrations, automated model runner, validated RL reward or ge
 
 ## Authorship and provenance
 
-Tobias Hopf selected the project direction and reviewed the financial rules and reference trajectories. Implementation, tests and documentation were developed with substantial AI assistance. The separate calculators provide computational cross-checking, not an independent human audit. Submitted explanations have preliminary AI reviews; formal human approval remains pending.
+Tobias Hopf selected the project direction and reviewed the financial rules and reference trajectories. Implementation, tests and documentation were developed with substantial AI assistance. The separate calculators provide computational cross-checking, not an independent human audit. The six within-limit submissions have formal human review records, and all six were classified as `explanation_fail`. The two over-limit submissions remain incomplete. No independent second review is recorded.
 
 All business inputs are synthetic. [Data provenance](docs/data_provenance.md) · [Owner reference review](reference/calibration-v1-review-record.json).

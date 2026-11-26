@@ -17,9 +17,29 @@ Ambos acertaram 124/124 verificações: limite zero no último snapshot, amortiz
 
 O usuário relatou que Claude usou somente Python local, decimal e jsonschema, sem navegação, em uma submissão, sem falhas ou intervenção adicional. Relatou também encurtamento de uma versão inicial com 802 palavras. O arquivo final recebido contém 801 palavras pelo critério publicado de separação por espaços, incluindo títulos e elementos de tabelas. O rascunho não foi recebido; não se pode verificar sua contagem. A entrega final é incomplete_submission, embora a nota numérica seja 100/100. Não houve edição pelo avaliador ou substituição do resultado.
 
-O GPT entregou 559 palavras e tem status explanation_review_pending. Em revisão preliminar por IA, ambos os textos atendem aos quatro critérios de conteúdo financeiro. A observação de sensibilidade temporal do Claude é qualitativa, não uma simulação intradiária. A revisão humana permanece pendente; overall_passed é falso em ambas as entregas.
+A submissão A (559 palavras) passou 124/124 verificações numéricas, mas a revisão humana formal registrou `explanation_fail` em `supported_drivers` porque não cita `receivables_snapshots.csv` como fonte dos saldos de colateral. A submissão B contém 801 palavras e permanece `incomplete_submission`; não recebeu revisão humana formal. O parecer preliminar por IA classificou os critérios de conteúdo como aprovados, mas não substitui o resultado humano nem supera o limite de palavras.
 
 Originais preservados byte a byte em runs/cal-v1-bb_release_006-A e runs/cal-v1-bb_release_006-B. Cada pasta contém grade.json, execution.json e parecer preliminar separado. Os arquivos de Downloads reutilizados não alteraram rodadas anteriores.
+
+
+## Revisão humana formal
+
+Em 26 de novembro de 2026, as seis explicações dentro do limite receberam revisão formal. Todas ficaram em `explanation_fail`, apesar da aprovação numérica de 100/100. Os dois textos acima de 800 palavras permanecem incompletos e não foram submetidos à aprovação humana.
+
+| Execução | Palavras | Resultado humano | Registro | Relatório final |
+|---|---:|---|---|---|
+| 003-A | 545 | `explanation_fail` | [revisão](../reviews/human/cal-v1-bb_rounding_003-A-review.json) | [relatório](human/bb_rounding_003-A-reviewed.json) |
+| 003-B | 802 | `incomplete_submission` | Não elegível | [grade](../runs/cal-v1-bb_rounding_003-B/grade.json) |
+| 004-A | 636 | `explanation_fail` | [revisão](../reviews/human/cal-v1-bb_customer_004-A-review.json) | [relatório](human/bb_customer_004-A-reviewed.json) |
+| 004-B | 751 | `explanation_fail` | [revisão](../reviews/human/cal-v1-bb_customer_004-B-review.json) | [relatório](human/bb_customer_004-B-reviewed.json) |
+| 005-A | 561 | `explanation_fail` | [revisão](../reviews/human/cal-v1-bb_cure_005-A-review.json) | [relatório](human/bb_cure_005-A-reviewed.json) |
+| 005-B | 789 | `explanation_fail` | [revisão](../reviews/human/cal-v1-bb_cure_005-B-review.json) | [relatório](human/bb_cure_005-B-reviewed.json) |
+| 006-A | 559 | `explanation_fail` | [revisão](../reviews/human/cal-v1-bb_release_006-A-review.json) | [relatório](human/bb_release_006-A-reviewed.json) |
+| 006-B | 801 | `incomplete_submission` | Não elegível | [grade](../runs/cal-v1-bb_release_006-B/grade.json) |
+
+Tobias Hopf de Souza consta como revisor nos seis registros. Não há segunda revisão independente registrada. O parecer preliminar de IA para 006-A marcou `supported_drivers` como aprovado; a revisão formal reprovou o critério pela ausência do nome do arquivo de snapshots de recebíveis. A decisão formal está no registro humano.
+
+Os relatórios finais foram preservados em `reports/human/`. Para 004-A, 004-B e 006-A, a reavaliação foi executada em cópias isoladas com finais de linha LF; para 005-B, os finais de linha dos arquivos locais foram normalizados para corresponder aos hashes previamente registrados. Nenhum conteúdo financeiro ou explicativo foi alterado.
 
 ## Limitações da comparação
 
@@ -31,4 +51,4 @@ São quatro cenários sintéticos públicos de desenvolvimento, com mecanismos c
 
 O projeto demonstra construção de tarefas financeiras verificáveis, referência em Decimal conferida com centavos inteiros, avaliação determinística, testes de erros deliberados, rastreabilidade de artefatos e distinção entre acurácia numérica e cumprimento do contrato de entrega. Os 69 testes existentes passaram na implementação; não foram necessárias alterações de código para avaliar estas respostas.
 
-O resultado honesto é: oito respostas numericamente corretas e duas explicações acima do limite. A próxima etapa é consolidar documentação e apresentação do repositório, concluir a revisão humana das explicações quando realizada e preparar a publicação. Não há necessidade de ampliar os casos para obter falhas artificiais.
+O resultado honesto é: oito respostas numericamente corretas, seis revisões humanas formais em explicações elegíveis — todas com `explanation_fail` — e duas submissões incompletas por excesso de palavras. Os registros e relatórios foram arquivados; a tarefa restante é manter a apresentação do repositório atualizada e preparar a publicação. Não há necessidade de ampliar os casos para obter falhas artificiais.

@@ -1,0 +1,82 @@
+{
+  "case_id": "bb_customer_004",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "status": "explanation_fail",
+  "errors": [],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 32,
+      "checks": 32,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "explanation": {
+    "status": "failed",
+    "reviewer": "Tobias Hopf de Souza",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pass",
+        "rationale": "The table correctly summarizes all four weekly eligible and recognized collateral amounts, borrowing bases, effective limits, funding actions, closing cash and debt, unused credit, and buffer shortfalls. It separately identifies the week-one and week-two buffer breaches and correctly reports no unpaid cure, closing overadvance, or unfunded cash deficit."
+      },
+      "supported_drivers": {
+        "verdict": "fail",
+        "rationale": "The explanation identifies the material dates, invoice IDs A-1 through D-1, customer balances, concentration deductions, and week-specific cash-event IDs and amounts; it also names cash_events.csv. However, it does not identify receivables_snapshots.csv as the source of the invoice balances underlying the collateral and limit changes. The review protocol requires material drivers to be traceable to input files as well as dates and record identities."
+      },
+      "complete_exceptions": {
+        "verdict": "pass",
+        "rationale": "The explanation accounts for all 24 invoice observations, including the 2027-01-17 zero-balance exclusion for D-1 while retaining customer D with zero values. It notes that no invoices are disputed, related-party, or past due, covers concentration deductions, and distinguishes buffer shortfalls from unpaid cures, overadvances, and unfunded deficits."
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pass",
+        "rationale": "The explanation applies the stated task rules, identifies the contractual rounding conventions and validated input constraints, distinguishes concentration deductions from write-offs and eligibility from collectability, and states that collateral is not cash. It does not assume waivers, refinancing, deferred payments, or penalties, and describes the data as synthetic rather than a real lending forecast."
+      }
+    }
+  },
+  "forecast_sha256": "234f002a7e021acaa2b670347f4dd16633847aa66077bb6c5f3962aa17feddf3",
+  "analysis_sha256": "da4b5fcd7a8fe9c8b31da1a10e1de24a4c13383b9d3e192e77baa81d0c9f37ce",
+  "analysis_word_count": 751,
+  "human_review_template": {
+    "grader_version": "calibration-1.0",
+    "forecast_sha256": "234f002a7e021acaa2b670347f4dd16633847aa66077bb6c5f3962aa17feddf3",
+    "analysis_sha256": "da4b5fcd7a8fe9c8b31da1a10e1de24a4c13383b9d3e192e77baa81d0c9f37ce",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}
