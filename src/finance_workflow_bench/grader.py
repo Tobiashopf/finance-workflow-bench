@@ -77,12 +77,12 @@ def trusted_reference(path=REFERENCE):
         raise EvaluatorError(f"Invalid trusted reference: {exc}") from exc
 
 
-def review_template(forecast_hash, analysis_hash):
-    return dict(grader_version=VERSION, forecast_sha256=forecast_hash, analysis_sha256=analysis_hash,
+def review_template(forecast_hash, analysis_hash, grader_version=VERSION):
+    return dict(grader_version=grader_version, forecast_sha256=forecast_hash, analysis_sha256=analysis_hash,
                 reviewer="", criteria={k: dict(verdict="pending", rationale="") for k in CRITERIA})
 
 
-def assess_review(path, submission_dir, forecast_hash, analysis_hash):
+def assess_review(path, submission_dir, forecast_hash, analysis_hash, grader_version=VERSION):
     # This option is an operator input. A review placed beside a candidate is never trusted.
     resolved = path.resolve()
     if resolved.is_relative_to(submission_dir.resolve()):
@@ -94,7 +94,7 @@ def assess_review(path, submission_dir, forecast_hash, analysis_hash):
     expected_keys = {"grader_version", "forecast_sha256", "analysis_sha256", "reviewer", "criteria"}
     if type(review) is not dict or set(review) != expected_keys:
         raise EvaluatorError("Operator review has missing or unexpected fields")
-    if review["grader_version"] != VERSION or review["forecast_sha256"] != forecast_hash or review["analysis_sha256"] != analysis_hash:
+    if review["grader_version"] != grader_version or review["forecast_sha256"] != forecast_hash or review["analysis_sha256"] != analysis_hash:
         raise EvaluatorError("Operator review is stale or belongs to different artifacts")
     if not isinstance(review["reviewer"], str) or not review["reviewer"].strip():
         raise EvaluatorError("Operator review requires a reviewer name")
