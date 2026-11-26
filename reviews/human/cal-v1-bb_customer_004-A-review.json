@@ -1,0 +1,24 @@
+{
+  "grader_version": "calibration-1.0",
+  "forecast_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+  "analysis_sha256": "89129c6efa5d7d7b77a0a713ec4afaaa45da8f4a5353bd0fe3fa59d62edca747",
+  "reviewer": "Tobias Hopf de Souza",
+  "criteria": {
+    "correct_summary": {
+      "verdict": "pass",
+      "rationale": "The explanation accurately reports the four weekly collateral and financing outcomes: concentration deductions and the contractual cap, the week-one and week-two mandatory cures and buffer shortfalls, the week-three voluntary repayment, and the week-four draw. It also correctly reports no closing unpaid cure, overadvance, or unfunded cash deficit."
+    },
+    "supported_drivers": {
+      "verdict": "fail",
+      "rationale": "The explanation identifies dates, invoice and customer IDs, balances, concentration deductions, and week-specific cash-event IDs and amounts. However, it does not name the input source files receivables_snapshots.csv and cash_events.csv that support those material collateral and cash drivers. The review protocol requires traceability to input files as well as dates and record identities."
+    },
+    "complete_exceptions": {
+      "verdict": "pass",
+      "rationale": "The explanation handles the 2027-01-17 zero-balance exclusion for D-1 while retaining customer D with zero eligible collateral, reports concentration deductions by snapshot, notes that all invoices are current with no disputes or related parties, and distinguishes the first two buffer breaches from unpaid cures, closing overadvances, and unfunded deficits."
+    },
+    "assumptions_and_limitations": {
+      "verdict": "pass",
+      "rationale": "The explanation states that snapshots are independent closing balances after receipts, invoice balance changes do not create additional receipts, collateral is not cash, and no refinancing, waivers, delayed payments, or penalties are assumed. It also states that the weekly projection does not establish intraperiod liquidity and documents the rounding conventions."
+    }
+  }
+}
