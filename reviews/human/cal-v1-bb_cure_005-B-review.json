@@ -1,0 +1,24 @@
+{
+  "grader_version": "calibration-1.0",
+  "forecast_sha256": "f80889bf234898c89bd4c78f1629ff5f91c774a86b625c614cfc95614dc31ec3",
+  "analysis_sha256": "fc7f0ef3048335806ba247fd216803023b542de825d6d903445a579831d6ff53",
+  "reviewer": "Tobias Hopf de Souza",
+  "criteria": {
+    "correct_summary": {
+      "verdict": "pass",
+      "rationale": "The explanation accurately summarizes all four weekly collateral and financing outcomes, including customer concentration, the contractual line cap, the mandatory week-one cure, voluntary repayments, buffer shortfalls, and the absence of closing overadvances or unfunded deficits."
+    },
+    "supported_drivers": {
+      "verdict": "fail",
+      "rationale": "The explanation identifies invoice and customer drivers and cites cash_events.csv with complete cash-event identifiers. However, it does not explicitly identify the receivables snapshot source files supporting the collateral balances and concentration calculations. Material collateral drivers therefore lack the source-file linkage required by the review protocol."
+    },
+    "complete_exceptions": {
+      "verdict": "pass",
+      "rationale": "The explanation covers concentration deductions, invoice eligibility, the appearance and absence of customer D across snapshots, mandatory and voluntary debt movements, minimum-cash buffer breaches, and the distinction between reserve shortfalls, unfunded deficits, and overadvances."
+    },
+    "assumptions_and_limitations": {
+      "verdict": "fail",
+      "rationale": "The explanation documents the financing waterfall, validated inputs, excluded fees and waivers, and the absence of collection-probability modeling. It does not explicitly state that weekly closing projections cannot establish intraperiod liquidity or reveal cash shortfalls occurring between weekly measurement dates."
+    }
+  }
+}
