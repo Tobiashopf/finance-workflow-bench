@@ -1,0 +1,24 @@
+{
+  "grader_version": "calibration-1.0",
+  "forecast_sha256": "160fa443c1438daa1c97d7ee17a2d6aa93226bfe21fa9b834910108ec8151a8e",
+  "analysis_sha256": "59f44d77a6559785f2aa06fb480bc96ddd7275e9a933233d903b3148475964dd",
+  "reviewer": "Tobias Hopf de Souza",
+  "criteria": {
+    "correct_summary": {
+      "verdict": "pass",
+      "rationale": "The explanation accurately summarizes the four weekly collateral and financing outcomes, including the concentration deductions, contractual line cap, mandatory week-one cure, voluntary amortizations, and minimum-cash reserve shortfalls in weeks one and three."
+    },
+    "supported_drivers": {
+      "verdict": "fail",
+      "rationale": "The explanation provides customer and invoice identifiers and abbreviated cash-event identifiers with dates and amounts, but does not explicitly identify the receivables snapshot source files supporting the collateral drivers. The cash-event references are also abbreviated rather than fully tied to the source file and complete record identifiers. Material drivers therefore lack the explicit source-file linkage required by the review protocol."
+    },
+    "complete_exceptions": {
+      "verdict": "pass",
+      "rationale": "The explanation addresses concentration deductions, missing collateral observations, eligibility conditions, mandatory and voluntary debt movements, reserve shortfalls, and the distinction between reserve violations and unfunded cash deficits. It also states that no closing overadvance or pending cure remains."
+    },
+    "assumptions_and_limitations": {
+      "verdict": "pass",
+      "rationale": "The explanation states the contractual calculation and rounding rules, eligibility precedence, treatment of independent snapshots, and the rule that collateral movements do not create cash. It also identifies the limitation that weekly projections do not demonstrate intraperiod liquidity."
+    }
+  }
+}
