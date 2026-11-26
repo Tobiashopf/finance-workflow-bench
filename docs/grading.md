@@ -45,12 +45,23 @@ Each mismatch contains group, field path, expected and submitted values, error c
 
 ## Human explanation review
 
-The operator reviews four criteria, each with `pass` or `fail` and a written rationale:
+The operator reviews four criteria, each with `pass` or `fail` and a written rationale. The criterion identifiers are shared across tasks, but their task-specific meaning differs:
+
+**Cash Forecast 001**
 
 1. `correct_summary`: minimum cash/week, all buffer breaches and deficits, peak debt/first week, and totals agree with the forecast.
 2. `supported_drivers`: at least three material drivers cite real input filenames/record IDs, correct amounts and timing, and explain their financial significance.
 3. `complete_exceptions`: duplicates, partial payments, internal transfers and horizon exclusions are explained correctly when present.
 4. `assumptions_and_limitations`: supplied assumptions are distinguished from conclusions; weekly scope and the diagnostic treatment of negative cash are acknowledged.
+
+**Borrowing Base 002 and calibration cases 003–006**
+
+1. `correct_summary`: the narrative agrees with eligible collateral, borrowing base, effective limit, debt, cash and any cure or shortfall outcomes.
+2. `supported_drivers`: material drivers cite the actual input files, dates, invoice/customer identifiers, amounts and timing.
+3. `complete_exceptions`: ineligible receivables, disputes, related parties, aging, concentration and empty snapshots are treated consistently with the case rules.
+4. `assumptions_and_limitations`: contractual rules, rounding stages, cure priority and minimum-cash constraints are represented accurately, where applicable.
+
+The four criteria are a common review structure, not identical substantive tests across the task families.
 
 A valid numerical answer with a bounded, nonempty explanation is `explanation_review_pending` until reviewed. The grader intentionally does not infer correctness from persuasive prose or keyword presence.
 
@@ -58,6 +69,8 @@ The report contains `human_review_template`. Copy that object to a separate oper
 
 ```sh
 python scripts/grade.py path/to/submission --review path/to/operator-review.json --report reports/reviewed-run.json
+python scripts/grade_borrowing_base.py path/to/submission --review path/to/operator-review.json --report reports/bb-reviewed-run.json
+python scripts/grade_calibration.py bb_cure_005 path/to/submission --review path/to/operator-review.json --report reports/calibration-reviewed-run.json
 ```
 
 The review file must be outside the submission directory. Its forecast hash, analysis hash and grader version must match; changes to either artifact require re-review. A candidate-authored review inside its directory is ignored and rejected if explicitly passed as the operator review. File location alone does not authenticate a reviewer: selecting the external file is a trusted operator action.
