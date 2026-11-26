@@ -52,19 +52,24 @@ Os identificadores são comuns aos casos, mas o conteúdo financeiro é específ
 
 ### `correct_summary`
 
-A conclusão executiva corresponde aos resultados do forecast: saldos, déficits, limites, amortizações, exceções materiais e mudanças entre períodos. Não confunde saldo de recebíveis com entrada de caixa, garantia com liquidez, ou limite disponível com dinheiro recebido.
+- **Cash Forecast 001:** a conclusão deve concordar com o menor caixa de fechamento e sua semana, todas as semanas abaixo do buffer e com déficit não financiado, pico de dívida e primeira semana em que ocorre, além dos totais de saques, amortizações e juros. Deve distinguir violação do caixa mínimo de déficit não financiado.
+- **Borrowing Base 002 e Calibration 003–006:** deve concordar com o colateral elegível, concentração, borrowing base, limite efetivo, caixa, dívida, curas obrigatórias, curas não pagas, excesso de limite e déficits. Não confunda recebíveis/colateral com recebimentos de caixa, nem redução de limite com baixa automática da dívida.
 
 ### `supported_drivers`
 
-Os fatores materiais são rastreáveis aos arquivos, datas, IDs e valores reais. A explicação mostra como os dados sustentam a conclusão e não cita registros inexistentes nem atribui causalidade sem suporte.
+Os fatores materiais devem ser rastreáveis aos arquivos de entrada, datas, IDs de registros, faturas ou clientes e valores corretos. No Cash Forecast, a explicação deve citar pelo menos três drivers materiais e explicar sua relevância financeira. Em Borrowing Base e calibrações, deve sustentar mudanças relevantes de elegibilidade, concentração, borrowing base e financiamento com os snapshots e identificadores aplicáveis. Não aceite registros inexistentes nem causalidade sem suporte.
 
 ### `complete_exceptions`
 
-A explicação identifica e trata as exceções relevantes para o caso: duplicidades, pagamentos parciais, transferências internas, exclusões, disputas, partes relacionadas, aging, concentração, snapshots vazios e outros eventos previstos na tarefa. A lista concreta aplicável depende do caso.
+- **Cash Forecast 001:** trate corretamente duplicidades exatas, pagamentos parciais, transferências internas, exclusões e eventos fora do horizonte, quando presentes.
+- **Borrowing Base 002 e Calibration 003–006:** trate faturas disputadas, partes relacionadas, atraso superior ao limite contratual, saldos zerados, deduções por concentração e snapshots vazios. Respeite a precedência de motivos de exclusão e não deduplique uma fatura entre datas diferentes.
+- Em qualquer família, não invente exceções nem reprove automaticamente um tópico que não ocorre no caso; avalie se a explicação o tratou de forma coerente com os dados e instruções.
 
 ### `assumptions_and_limitations`
 
-As regras contratuais e premissas fornecidas são aplicadas sem alterações silenciosas. A explicação distingue fatos, premissas e inferências; trata arredondamentos no estágio correto; respeita prioridades de financiamento e limites de caixa; reconhece limitações que afetam a conclusão.
+- **Cash Forecast 001:** diferencie premissas fornecidas de conclusões, respeite a convenção de juros e arredondamento, a política semanal obrigatória e o escopo semanal determinístico. Reconheça que caixa negativo é um déficit projetado diagnóstico, não um cheque especial autorizado.
+- **Borrowing Base 002 e Calibration 003–006:** aplique as regras contratuais de elegibilidade, concentração, advance rate, arredondamento, cura obrigatória e prioridade sobre o buffer mínimo. Diferencie fatos, premissas e inferências; reconheça que colateral não é caixa e que um limite menor não extingue automaticamente a dívida.
+- Em todos os casos, não substitua as regras sintéticas por convenções externas nem apresente o cenário como previsão de comportamento real.
 
 ## 6. Regras de decisão
 
