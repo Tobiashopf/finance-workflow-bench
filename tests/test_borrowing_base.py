@@ -104,10 +104,15 @@ class BorrowingBaseTests(unittest.TestCase):
             grader.grade(self.folder, self.folder / "candidate-review.json")
 
     def test_human_review_cannot_override_numerical_failure(self):
-        review = self.make_review()
         candidate = copy.deepcopy(GOLD)
         candidate["weeks"][0]["interest"] = "999.99"
         self.write(candidate)
+        template = grader.grade(self.folder)["human_review_template"]
+        template["reviewer"] = "Synthetic unit-test reviewer (not an actual review)"
+        for item in template["criteria"].values():
+            item.update(verdict="pass", rationale="Synthetic unit-test decision only.")
+        review = self.folder.parent / (self.folder.name + "-numerical-failure-review.json")
+        review.write_text(json.dumps(template), encoding="utf-8")
         result = grader.grade(self.folder, review)
         self.assertEqual(result["status"], "numerical_fail")
         self.assertFalse(result["overall_passed"])
