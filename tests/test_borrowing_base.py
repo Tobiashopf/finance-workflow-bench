@@ -73,6 +73,50 @@ class BorrowingBaseTests(unittest.TestCase):
         self.assertEqual(result["status"], "explanation_review_pending")
         self.assertFalse(result["overall_passed"])
 
+    def make_review(self, verdict="pass", grader_version="bb-0.1.0"):
+        self.write(GOLD)
+        template = grader.grade(self.folder)["human_review_template"]
+        self.assertEqual(template["grader_version"], grader_version)
+        template["reviewer"] = "Synthetic unit-test reviewer (not an actual review)"
+        for item in template["criteria"].values():
+            item.update(verdict=verdict, rationale="Synthetic unit-test decision only.")
+        path = self.folder.parent / (self.folder.name + "-operator-review.json")
+        path.write_text(json.dumps(template), encoding="utf-8")
+        return path
+
+    def test_external_human_review_pass_and_fail(self):
+        review = self.make_review()
+        passed = grader.grade(self.folder, review)
+        self.assertEqual(passed["status"], "passed")
+        self.assertTrue(passed["overall_passed"])
+        failed_review = self.make_review("fail")
+        failed = grader.grade(self.folder, failed_review)
+        self.assertEqual(failed["status"], "explanation_fail")
+        self.assertFalse(failed["overall_passed"])
+
+    def test_review_is_hash_bound_and_external(self):
+        review = self.make_review()
+        self.write(GOLD, TEXT + "\\nChanged after review.")
+        with self.assertRaises(EvaluatorError):
+            grader.grade(self.folder, review)
+        self.write(GOLD)
+        with self.assertRaises(EvaluatorError):
+            grader.grade(self.folder, self.folder / "candidate-review.json")
+
+    def test_human_review_cannot_override_numerical_failure(self):
+        candidate = copy.deepcopy(GOLD)
+        candidate["weeks"][0]["interest"] = "999.99"
+        self.write(candidate)
+        template = grader.grade(self.folder)["human_review_template"]
+        template["reviewer"] = "Synthetic unit-test reviewer (not an actual review)"
+        for item in template["criteria"].values():
+            item.update(verdict="pass", rationale="Synthetic unit-test decision only.")
+        review = self.folder.parent / (self.folder.name + "-numerical-failure-review.json")
+        review.write_text(json.dumps(template), encoding="utf-8")
+        result = grader.grade(self.folder, review)
+        self.assertEqual(result["status"], "numerical_fail")
+        self.assertFalse(result["overall_passed"])
+
     def test_monetary_spelling_and_array_order_are_equivalent(self):
         candidate = copy.deepcopy(GOLD)
         candidate["invoice_checks"].reverse()

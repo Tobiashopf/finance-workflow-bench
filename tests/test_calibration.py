@@ -48,6 +48,20 @@ class CalibrationTests(unittest.TestCase):
                 self.assertFalse(report["overall_passed"])
                 self.assertEqual({k:v["checks"] for k,v in report["groups"].items()}, self.registry[case]["checks"])
 
+    def test_calibration_review_uses_calibration_version_and_hashes(self):
+        case = CASES[0]
+        self.submit(case)
+        template = grade(case, self.folder)["human_review_template"]
+        self.assertEqual(template["grader_version"], "calibration-1.0")
+        template["reviewer"] = "Synthetic unit-test reviewer (not an actual review)"
+        for item in template["criteria"].values():
+            item.update(verdict="pass", rationale="Synthetic unit-test decision only.")
+        review = self.folder.parent/"calibration-operator-review.json"
+        review.write_text(json.dumps(template), encoding="utf-8")
+        approved = grade(case, self.folder, review)
+        self.assertEqual(approved["status"], "passed")
+        self.assertTrue(approved["overall_passed"])
+
     def test_rounding_target(self):
         case = CASES[0]
         candidate = self.gold(case)

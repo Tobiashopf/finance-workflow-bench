@@ -1,4 +1,4 @@
-"""Numerical-only case 002 grader; explanation approval remains human and separate."""
+"""Grade Borrowing Base case 002 with separate operator explanation review."""
 import argparse
 import json
 import sys
@@ -14,11 +14,12 @@ from finance_workflow_bench.grader import read_bounded, parse_json, digest, Subm
 PIN = "5866698763960143cf69fca6190bded4ea50556db697aaea8d1a6c4fea723189"
 
 
-def grade(folder):
-    return grade_registered(folder, "borrowing_base_002", ROOT / "reference/borrowing_base_002/forecast.json", PIN)
+def grade(folder, review_path=None):
+    return grade_registered(folder, "borrowing_base_002", ROOT / "reference/borrowing_base_002/forecast.json", PIN,
+                            review_path=review_path, grader_version="bb-0.1.0")
 
 
-def grade_registered(folder, case_id, reference_path, pin):
+def grade_registered(folder, case_id, reference_path, pin, review_path=None, grader_version="bb-0.1.0"):
     """Operator-side API; callers must obtain paths/pins from a trusted registry."""
     try:
         raw = read_bounded(reference_path, 1048576)
@@ -32,8 +33,8 @@ def grade_registered(folder, case_id, reference_path, pin):
         raise EvaluatorError("Reference JSON invalid") from exc
     if validate(expected, case_id=case_id):
         raise EvaluatorError("Reference schema mismatch")
-    result = dict(case_id=case_id, grader_version="bb-0.1.0", reference_sha256=pin, numerical_score=0, numerical_passed=False, overall_passed=False,
-                  status="invalid_submission", errors=[], mismatches=[], groups={})
+    result = dict(case_id=case_id, grader_version=grader_version, reference_sha256=pin, numerical_score=0, numerical_passed=False, overall_passed=False,
+                  status="invalid_submission", errors=[], mismatches=[], groups={}, explanation=dict(status="not_reviewable"))
     try:
         submitted = read_bounded(Path(folder)/"forecast.json", 1048576)
         result["forecast_sha256"] = digest(submitted)
@@ -94,6 +95,15 @@ def grade_registered(folder, case_id, reference_path, pin):
     except (SubmissionError, UnicodeError) as exc:
         result["status"] = "incomplete_submission"
         result["errors"].append(str(exc))
+        return result
+    result["explanation"] = dict(status="explanation_review_pending")
+    from finance_workflow_bench.grader import review_template, assess_review
+    result["human_review_template"] = review_template(result["forecast_sha256"], result["analysis_sha256"], grader_version)
+    if review_path is not None:
+        result["explanation"] = assess_review(Path(review_path), Path(folder), result["forecast_sha256"], result["analysis_sha256"], grader_version)
+        if result["numerical_passed"]:
+            result["status"] = "passed" if result["explanation"]["status"] == "passed" else "explanation_fail"
+    result["overall_passed"] = result["status"] == "passed"
     return result
 
 
@@ -101,11 +111,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("submission", type=Path)
     parser.add_argument("--report", type=Path)
+    parser.add_argument("--review", type=Path, help="Trusted operator human review, outside the submission directory")
     args = parser.parse_args()
     if args.report and (args.report.exists() or args.report.resolve().is_relative_to(args.submission.resolve())):
         parser.error("Report must be new and outside the submission directory")
+    if args.review and args.review.resolve().is_relative_to(args.submission.resolve()):
+        parser.error("Human review must be outside the submission directory")
+    if args.report and args.review and args.report.resolve() == args.review.resolve():
+        parser.error("Report cannot overwrite the human review")
     try:
-        report = grade(args.submission)
+        report = grade(args.submission, args.review)
         output = json.dumps(report, indent=2)+"\n"
         if args.report:
             args.report.parent.mkdir(parents=True, exist_ok=True)
