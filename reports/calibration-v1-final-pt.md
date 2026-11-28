@@ -1,5 +1,7 @@
 # Bateria v1 — resultados exploratórios e adjudicação humana
 
+**Status da revisão do projeto:** encerrada com ressalvas em 28/11/2026.
+
 As oito execuções planejadas foram avaliadas. Não há novas execuções previstas nesta bateria.
 
 | Caso | GPT: nota / palavras | Claude: nota / palavras | Cumprimento do limite textual |

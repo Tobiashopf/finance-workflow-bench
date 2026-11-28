@@ -1,5 +1,7 @@
 # Exploratory evaluation results
 
+**Project review status:** closed with documented caveats (28 November 2026).
+
 ## Calibration battery
 
 Eight submitted artifacts were evaluated against four pre-specified synthetic cases, and all eight achieved exact numerical agreement. Six explanations met the published 800-word limit; two Claude-labelled submissions contained 802 and 801 whitespace-delimited words. Those two retain 100/100 numerical scores but are incomplete submissions and were not eligible for formal explanation review. The six eligible explanations first received human reviews that all resulted in `explanation_fail`. A second external audit was received on 27 November; by operator decision on 28 November, its verdicts were adopted unchanged as the current adjudication: four `passed`, two `explanation_fail`. The second reviewer states that the protected reference was unavailable; the 006-A form has an unidentified reviewer label. See the [operational log](../reports/human/calibration-v1-review-log.md) for these limitations and the disagreement record.

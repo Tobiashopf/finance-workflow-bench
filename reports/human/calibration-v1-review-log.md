@@ -1,5 +1,7 @@
 # Registro operacional das revisões humanas — Calibration v1
 
+**Status:** revisão encerrada com ressalvas em 28 de novembro de 2026.
+
 **Data da consolidação:** 28 de novembro de 2026 (America/Sao_Paulo).  
 **Revisor inicial:** Tobias Hopf de Souza.  
 **Segundo revisor conforme informado:** Davi Hopf nos formulários 01–05; `Auditor(a) — Revisão 6` no formulário 06.  

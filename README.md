@@ -1,5 +1,7 @@
 # Finance Workflow Bench
 
+**Project review status:** closed with documented caveats (28 November 2026).
+
 **Auditable financial tasks for evaluating AI-generated forecasts.** Six synthetic cases combine structured deliverables, exact monetary checks, reference calculations and separate explanation review.
 
 The project tests whether an AI system can execute a specified financial workflow—not merely produce a plausible narrative. It separates **numerical correctness**, **delivery compliance** and **human assessment of the explanation**.

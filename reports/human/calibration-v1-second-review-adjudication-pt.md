@@ -1,5 +1,7 @@
 # Adjudicação da auditoria externa — Calibration v1
 
+**Status:** revisão encerrada com ressalvas em 28 de novembro de 2026.
+
 **Decisão do operador:** 28 de novembro de 2026. Os vereditos da auditoria externa são adotados sem alteração para determinar o status vigente. Os registros da primeira rodada permanecem preservados.
 
 ## Status vigente
