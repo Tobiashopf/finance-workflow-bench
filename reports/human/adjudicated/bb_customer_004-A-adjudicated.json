@@ -1,0 +1,82 @@
+{
+  "case_id": "bb_customer_004",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": true,
+  "status": "passed",
+  "errors": [],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 32,
+      "checks": 32,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "forecast_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+  "analysis_sha256": "89129c6efa5d7d7b77a0a713ec4afaaa45da8f4a5353bd0fe3fa59d62edca747",
+  "analysis_word_count": 636,
+  "explanation": {
+    "status": "passed",
+    "reviewer": "Davi Hopf",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pass",
+        "rationale": "Recalculei de forma independente a partir de task_1.md e das cinco entradas (opening_position, facility, cash_events, receivables_snapshots, snapshot_dates). Os valores do analysis_1.md coincidem com a minha reconstrução e com forecast_1.json. S/T/H/base/limite: 240000.00/60000.00/180000.00/144000.00 (2027-01-10); 240000.00/60000.00/160000.00/128000.00 (01-17); 360000.00/90000.00/330000.00/264000.00, limite 200000.00 pelo teto (01-24); 240000.00/60000.00/240000.00/192000.00 (01-31). Cascata: juros 300.00, 288.00, 256.00 e 221.69; curas pagas de 6000.00 e 16000.00 nas semanas 1 e 2; amortização voluntária de 17156.00 na semana 3; saque de 40221.69 na semana 4; caixa final 43700.00, 17412.00, 50000.00 e 50000.00; dívida final 144000.00, 128000.00, 110844.00 e 151065.69; crédito não utilizado 0.00, 0.00, 89156.00 e 40934.31. A conclusão está correta: quebra do buffer nas semanas 1 e 2 (6300.00 e 32588.00, coluna 'Falta do mínimo'), sem déficit não financiado, cura não paga ou excesso de limite em nenhum fechamento. O texto distingue colateral de caixa, deduções de concentração de pagamentos e base de empréstimo de crédito disponível, e mostra a cura paga com caixa, sem baixa automática da dívida."
+      },
+      "supported_drivers": {
+        "verdict": "pass",
+        "rationale": "Os fatores materiais são rastreáveis aos CSVs, com datas, IDs e valores corretos. (1) Em 2027-01-10, A-1, A-2 e A-3 somam 120000.00 e a dedução de 60000.00 leva o limite a 144000.00, abaixo da dívida de 150000.00, gerando cura de 6000.00. (2) Em 2027-01-17, B-1 sobe para 80000.00 (dedução de 20000.00) e D-1 vai a zero; S fica igual, mas H cai 20000.00 e o limite cai 16000.00, gerando cura de 16000.00 e caixa final de 17412.00. (3) Em 2027-01-24, S sobe a 360000.00, só A é deduzido (30000.00) e a base de 264000.00 fica limitada ao teto de 200000.00, com crédito não utilizado de 89156.00. (4) Em 2027-01-31, a queda dos saldos reduz base e limite a 192000.00 sem deduções, e o saque de 40221.69 recompõe o mínimo. Os oito eventos bb_customer_004-W1 a W4 receipt/payment são citados por ID, com valores corretos (20000.00/30000.00, 10000.00/20000.00, 60000.00/10000.00, 10000.00/50000.00)."
+      },
+      "complete_exceptions": {
+        "verdict": "pass",
+        "rationale": "Identifica corretamente a única exclusão (D-1 em 2027-01-17, zero_balance) e mantém D no controle por cliente com elegível, reconhecido e deduzido iguais a zero e o mesmo T de 60000.00, como exige o task_1.md. Declara 24 observações, sem disputas, partes relacionadas ou atraso (todos os vencimentos em 2027-02-28), o que confere com receivables_snapshots_1.csv, e enuncia a precedência e a fronteira de 60 dias sem inventar ocorrências. As deduções de concentração são explicadas em todas as semanas (A 60000.00; A 60000.00 e B 20000.00; A 30000.00; nenhuma em 01-31), com T compartilhado sobre o S original. Não deduplica faturas entre datas. Snapshot vazio não ocorre neste caso; a ausência do tópico não foi penalizada."
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pass",
+        "rationale": "A seção 'Evidência, premissas e limites' separa o que vem dos registros (eventos de caixa por ID e valor), o que não foi presumido (refinanciamento, dispensa, atraso de pagamentos, penalidade) e os limites: snapshots são saldos independentes; variações de títulos não geram recebimentos; deduções não são pagamentos nem baixas; a base de empréstimo não é caixa nem crédito disponível; a recuperação da semana 3 não elimina as violações anteriores; a projeção semanal não atesta liquidez intrassemanal. Aplica e nomeia o mínimo de 50000.00, o teto de 200000.00, a fronteira de 60 dias, a precedência, o truncamento ao centavo em bases e limites, o half-up nos juros e a cura antes do mínimo. Ressalvas que não mudam o veredito: a taxa de adiantamento (80%) e o teto de concentração (25%) não são nomeados, embora aplicados corretamente em todas as semanas; não se diz que elegibilidade não implica probabilidade de cobrança."
+      }
+    }
+  },
+  "human_review_template": {
+    "grader_version": "calibration-1.0",
+    "forecast_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+    "analysis_sha256": "89129c6efa5d7d7b77a0a713ec4afaaa45da8f4a5353bd0fe3fa59d62edca747",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

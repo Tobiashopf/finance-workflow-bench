@@ -1,0 +1,6 @@
+# Registro da revisão
+
+- Revisor(a): Auditor(a) — Revisão 6
+- Data (AAAA-MM-DD): 2026-11-27
+- Divergências a resolver: nenhuma. `original_grade.json` registra 124/124 checagens numéricas (100,0) e status `explanation_review_pending`, compatível com aprovação numérica e pendência apenas de revisão humana da explicação. Os hashes de `forecast.json` e `analysis.md` conferem com os registrados no grade e no review.
+- Observações: A análise (559 palavras, dentro do limite de 1–800) cobre os quatro critérios da rubrica. Verifiquei os principais valores contra os inputs: semanas 1–3 com colateral 400.000,00, T=100.000,00, BB=320.000,00 e L=200.000,00; semana 4 com snapshot vazio e L=0,00; cura de 150.000,00 paga em 31/01; caixa final de 69.700,00 e dívida zero na semana 4; todas as violações zeradas/falsas. A explicação distingue colateral de recebimentos e cura pendente de violação de fechamento. Nenhum arquivo de tarefa, dados ou submissão foi alterado. A referência protegida não estava no pacote; a revisão baseou-se nos inputs, na submissão e no grade numérico, conforme o procedimento.

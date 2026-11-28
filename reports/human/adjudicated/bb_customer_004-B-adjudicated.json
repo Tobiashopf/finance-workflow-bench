@@ -1,0 +1,82 @@
+{
+  "case_id": "bb_customer_004",
+  "grader_version": "calibration-1.0",
+  "reference_sha256": "34befb55064279bec830b69995052757b79cbfd8d5239df12d9e3153bee5c7c2",
+  "numerical_score": 100.0,
+  "numerical_passed": true,
+  "overall_passed": false,
+  "status": "explanation_fail",
+  "errors": [],
+  "mismatches": [],
+  "groups": {
+    "eligibility": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    },
+    "concentration": {
+      "passed": 32,
+      "checks": 32,
+      "score": 20.0
+    },
+    "financing": {
+      "passed": 52,
+      "checks": 52,
+      "score": 40.0
+    },
+    "violations": {
+      "passed": 28,
+      "checks": 28,
+      "score": 20.0
+    }
+  },
+  "forecast_sha256": "234f002a7e021acaa2b670347f4dd16633847aa66077bb6c5f3962aa17feddf3",
+  "analysis_sha256": "da4b5fcd7a8fe9c8b31da1a10e1de24a4c13383b9d3e192e77baa81d0c9f37ce",
+  "analysis_word_count": 751,
+  "explanation": {
+    "status": "failed",
+    "reviewer": "Davi Hopf",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pass",
+        "rationale": "Recalculei de forma independente a partir de task_025e4e.md e das cinco entradas. A tabela de analysis_3b6268.md reproduz todos os valores corretos, que coincidem com forecast_1de38e.json. S/T/H/base/limite: 240000.00/60000.00/180000.00/144000.00 (2027-01-10); 240000.00/60000.00/160000.00/128000.00 (01-17); 360000.00/90000.00/330000.00/264000.00, limite 200000.00 pelo teto (01-24); 240000.00/60000.00/240000.00/192000.00 (01-31). Juros 300.00, 288.00, 256.00 e 221.69; curas de 6000.00 e 16000.00; amortização de 17156.00; saque de 40221.69; caixa final 43700.00, 17412.00, 50000.00 e 50000.00; dívida final 144000.00, 128000.00, 110844.00 e 151065.69; crédito não utilizado 0.00, 0.00, 89156.00 e 40934.31. As violações são reportadas em separado e estão corretas: quebra do buffer só nas semanas 1 e 2 (6300.00 e 32588.00), nenhum déficit não financiado, nenhuma cura não paga ou excesso de limite. A seção 'Collateral versus receipts' distingue saldos de snapshot de caixa (D-1 a 0.00 não tratado como recebimento) e o texto mostra a cura paga com caixa, sem baixa automática da dívida. Imprecisão menor sem efeito: na semana 3, diz que o recebimento W3 'lifts B' sem citar o pagamento W3 de 10000.00 e os juros."
+      },
+      "supported_drivers": {
+        "verdict": "pass",
+        "rationale": "Quatro fatores materiais, todos rastreáveis aos CSVs, com datas, IDs e valores corretos e relevância financeira explicada. (1) A-1, A-2 e A-3 (40000.00 cada) dão a A 120000.00 elegíveis; com T de 60000.00, a dedução de 60000.00 leva a base a 144000.00, abaixo da dívida de 150000.00, e exige cura de 6000.00. (2) Em 2027-01-17, D-1 vai a 0.00 (zero_balance) e B-1 sobe a 80000.00 (dedução de 20000.00); S fica em 240000.00, mas H cai a 160000.00 e o limite a 128000.00, forçando cura de 16000.00. (3) Em 2027-01-24, S sobe a 360000.00, T a 90000.00, só A é deduzido (30000.00) e a base de 264000.00 fica limitada ao teto de 200000.00. (4) Em 2027-01-31, todos os clientes ficam em exatamente T, sem deduções, e o limite é 192000.00. A seção 'Funding priorities' cita os eventos de caixa por ID ou por semana (W1 a W4) e o saque de 40221.69 com folga de 81156.00, que confere."
+      },
+      "complete_exceptions": {
+        "verdict": "pass",
+        "rationale": "Identifica corretamente a única exclusão entre as 24 observações (D-1 em 2027-01-17, zero_balance) e mantém o cliente D no controle por cliente com elegível e reconhecido zero e o T compartilhado. Declara que não há disputas, partes relacionadas nem atraso (todos vencem em 2027-02-28, 0 dia), o que confere com receivables_snapshots_49d25a.csv. As deduções de concentração aparecem em todas as semanas em que ocorrem (A 60000.00; A 60000.00 e B 20000.00; A 30000.00; nenhuma em 01-31), com T calculado como 25% do S original. Não deduplica faturas entre datas. O texto não enuncia a precedência das exclusões nem a fronteira de 60 dias, mas nenhuma delas é acionada (só um motivo de exclusão ocorre), então a omissão não foi penalizada. Snapshot vazio não ocorre neste caso."
+      },
+      "assumptions_and_limitations": {
+        "verdict": "fail",
+        "rationale": "A explicação não sustenta o critério com evidência suficiente. Pontos atendidos: aplica as regras do task (truncamento ao centavo nas bases, half-up nos juros, cura antes do buffer), valida as entradas (sem chaves duplicadas, flags válidas, datas dentro do horizonte), diz que deduções não são baixas e que elegibilidade não implica cobrança, distingue colateral de caixa em seção própria e declara que não modelou waivers, refinanciamento, adiamento de pagamentos nem penalidades. Lacunas: (a) em nenhum ponto reconhece que a projeção semanal, com fechamentos semanais, não demonstra liquidez intrassemanal, limitação que a rubrica exige e que está ausente da seção inteira de Assumptions and limitations; (b) apresenta as quebras de buffer das semanas 1 e 2 como 'real liquidity covenant gaps', rótulo que não consta do task_025e4e.md, o qual trata as regras como contratuais sintéticas e proíbe substituir convenções externas, e o faz como fato, sem distinguir fato, premissa e inferência; (c) a taxa de adiantamento de 80% não é nomeada (o 25% é), embora aplicada corretamente em todas as semanas. Como a limitação intrassemanal é elemento explícito do critério e está ausente, o critério não recebe pass. Os demais critérios não foram afetados."
+      }
+    }
+  },
+  "human_review_template": {
+    "grader_version": "calibration-1.0",
+    "forecast_sha256": "234f002a7e021acaa2b670347f4dd16633847aa66077bb6c5f3962aa17feddf3",
+    "analysis_sha256": "da4b5fcd7a8fe9c8b31da1a10e1de24a4c13383b9d3e192e77baa81d0c9f37ce",
+    "reviewer": "",
+    "criteria": {
+      "correct_summary": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "supported_drivers": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "complete_exceptions": {
+        "verdict": "pending",
+        "rationale": ""
+      },
+      "assumptions_and_limitations": {
+        "verdict": "pending",
+        "rationale": ""
+      }
+    }
+  }
+}

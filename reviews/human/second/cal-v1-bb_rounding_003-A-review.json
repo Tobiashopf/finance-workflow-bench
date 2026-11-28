@@ -1,0 +1,24 @@
+{
+  "grader_version": "calibration-1.0",
+  "forecast_sha256": "af45ef7afeedde9ac89ab32e0b1a8645ebfb84e13c7e71c715b136b0ba390391",
+  "analysis_sha256": "c3ff5013e633dd4e5cd4d139dd20e94eecd29e84138ea107cf6e9734b5c58931",
+  "reviewer": "Davi Hopf",
+  "criteria": {
+    "correct_summary": {
+      "verdict": "pass",
+      "rationale": "Recalculei de forma independente a partir de task.md e das cinco entradas (opening_position, facility, cash_events, receivables_snapshots, snapshot_dates). Os valores citados em analysis.md coincidem com a minha reconstrução e com forecast.json: S/T/H/base/limite = 240000.06/60000.01/180000.03/144000.02 (2027-01-10); 240000.12/60000.03/180000.08/144000.06 (01-17); 400000.10/100000.02/400000.07/320000.05, limite 200000.00 pelo teto (01-24); 210000.06/52500.01/155000.05/124000.04 (01-31). A cascata de caixa e dívida também confere: juros 300.01, 288.00, 288.00 e 221.76; cura de 6002.48 na semana 1; saques de 0.04 e 13121.53; amortização voluntária de 33121.55; caixa final 43697.51, 33409.55, 50000.00 e 22899.77; dívida final 144000.02, 144000.06, 110878.51 e 124000.04. A conclusão de quebra da reserva nas semanas 1, 2 e 4, sem déficit não financiado, cura não paga ou excesso de limite, está correta. O texto separa saldo de recebíveis de recebimento de caixa e mostra, na semana 1, que o limite abaixo da dívida exige cura paga com caixa, sem baixa automática da dívida."
+    },
+    "supported_drivers": {
+      "verdict": "pass",
+      "rationale": "Há mais de três fatores materiais rastreáveis às entradas, com valores corretos e relevância explicada. (1) Deduções de concentração de A-1 (40000.02) e B-1 (20000.01) em 2027-01-10 reduzem a base a 144000.02, abaixo da dívida inicial de 150002.50, e geram a cura de 6002.48. (2) Entrada de D-1 em 2027-01-24 leva o elegível a 400000.10; a base de 320000.05 fica limitada pelo teto de 200000.00, com crédito não utilizado de 89121.49. (3) Ausência de D-1 em 2027-01-31 contribui zero, sem inferir recebimento; base/limite caem a 124000.04 e o saque de 13121.53 não restaura a reserva (caixa final 22899.77). (4) Os eventos bb_rounding_003-W3-receipt/payment (+50000.00 líquido) explicam a amortização voluntária de 33121.55, e bb_rounding_003-W4-receipt/payment (-40000.00 líquido) explicam a queda de caixa. Lacuna menor: os eventos W1 e W2 não são citados por ID."
+    },
+    "complete_exceptions": {
+      "verdict": "pass",
+      "rationale": "Declara corretamente que nenhuma das 13 observações tem exclusão (todas vencem em 2027-02-28, 0 dia de atraso, saldo positivo, flags false), o que confere com receivables_snapshots.csv. Enuncia a fronteira de 60 dias e a precedência disputed, related_party, over_60_days, zero_balance, sem inventar ocorrências. A concentração é tratada em todas as semanas, com valores e deduções corretos: C sem dedução nas semanas 1, 2 e 4; deduções de 0.01 e 0.02 para C e D em 2027-01-24; regra simultânea sobre o S original e aplicada mesmo com apenas três clientes. Conta 13 observações sem deduplicar A-1, B-1 e C-1 entre datas e trata D-1 ausente em 2027-01-31 como zero. Não há snapshot vazio neste caso, então a ausência do tópico não é motivo de reprovação."
+    },
+    "assumptions_and_limitations": {
+      "verdict": "pass",
+      "rationale": "Declara a base de dados (apenas os cinco arquivos de entrada, aritmética decimal), as regras aplicadas (25% de concentração, 60 dias, precedência, truncamento ao centavo em limites e bases, half-up nos juros, cura antes da reserva mínima), o que não foi presumido (refinanciamento, dispensa, adiamento, penalidade, receita por desaparecimento de fatura) e as limitações (saldos de snapshot não são receitas; a recuperação da reserva na semana 3 não apaga as quebras anteriores; a projeção semanal não demonstra liquidez intrassemanal). Ressalvas que não mudam o veredito: a taxa de adiantamento (80%) e o caixa mínimo (50000.00) não são nomeados, embora aplicados corretamente em todas as semanas; não há rotulagem explícita de fato, premissa e inferência; não se diz que elegibilidade não implica probabilidade de cobrança. É o critério mais próximo do limite; aprovado porque a evidência sobre colateral diferente de caixa, ausência de premissas ocultas e limite intrassemanal é explícita."
+    }
+  }
+}

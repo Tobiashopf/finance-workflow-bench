@@ -1,0 +1,24 @@
+{
+  "grader_version": "calibration-1.0",
+  "forecast_sha256": "f7dd58061c7982682db9d10795cf307f829d6e88fae0d09fe8f764a4ee816f67",
+  "analysis_sha256": "a4b13f9463c9b1f0e678700ffd84269f6ea410054791553159cf81e573a372ff",
+  "reviewer": "Auditor(a) — Revisão 6",
+  "criteria": {
+    "correct_summary": {
+      "verdict": "pass",
+      "rationale": "A conclusão concorda com os números da submissão e da referência numérica: elegível/reconhecido de 400.000,00 nas semanas 1–3, limiar de concentração de 100.000,00 sem deduções, borrowing base de 320.000,00 truncada pelo teto para limite efetivo de 200.000,00; na semana 4, snapshot vazio com S=T=H=BB=L=0,00. Caixa e dívida finais (50.000,00/150.000,00 nas semanas 1–3; 69.700,00/0,00 na semana 4), cura obrigatória de 150.000,00 integralmente paga em 31/01, cura não paga zero, overadvance zero, buffer shortfall zero e déficit de caixa zero estão todos corretos. A análise distingue explicitamente colateral de recebimentos (seção 'Método e limites') e afirma que limite reduzido não apaga dívida automaticamente, tratando a cura como obrigação separada."
+    },
+    "supported_drivers": {
+      "verdict": "pass",
+      "rationale": "Os fatores materiais são rastreáveis a IDs, datas e valores: as doze observações A-1/B-1/C-1/D-1 com 100.000,00 cada e vencimento 2027-02-28; o snapshot vazio de 2027-01-31 expresso em snapshot_dates.csv; o pagamento bb_release_006-W1-payment de 9.700,00; os recebimentos W2 e W3 de 300,00; o recebimento W4 de 210.000,00 e o pagamento W4 de 40.000,00; juros de 300,00 por semana sobre dívida inicial de 150.000,00. A relevância financeira é explicada: os 210.000,00 da semana 4 viabilizam a cura de 150.000,00 com prioridade sobre o caixa mínimo, deixando 69.700,00. São pelo menos três drivers materiais sustentados com evidência."
+    },
+    "complete_exceptions": {
+      "verdict": "pass",
+      "rationale": "A análise trata as exceções aplicáveis: informa que não há faturas contestadas, de partes relacionadas, com atraso acima de 60 dias ou saldo zero; registra corretamente que exatamente 60 dias permaneceria elegível; explica o limiar simultâneo de 25% com S=400.000,00 e ausência de deduções por concentração; e trata o snapshot vazio de 2027-01-31 como válido, sem transportar colateral nem inventar clientes/faturas. Reconhece que a repetição de identificadores entre datas não é duplicidade e que clientes totalmente excluídos seriam mantidos com zeros (não existem no pacote). A precedência de exclusões é mencionada na ordem correta. Não reprova tópicos inexistentes."
+    },
+    "assumptions_and_limitations": {
+      "verdict": "pass",
+      "rationale": "Aplica as regras contratuais: elegibilidade por atraso/disputa/parte relacionada/saldo, concentração simultânea sobre S original, advance rate de 80% com truncamento ao centavo, teto de 200.000,00, juros half-up e cura obrigatória antes do caixa mínimo. Diferencia fatos (eventos e snapshots dos arquivos) de método (cálculos decimais locais) e limitações: análise semanal não garante liquidez intradiária, depende dos fluxos informados, não presume cobranças, refinanciamentos, dispensas de cura ou pagamentos adiados, e afirma que colateral não é dinheiro nem crédito automaticamente disponível. Não há extrapolação para convenções externas."
+    }
+  }
+}
